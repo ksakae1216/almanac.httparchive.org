@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: JavaScript
 description: Chapitre JavaScript du Web Almanac 2019 couvrant la quantité de JavaScript que nous utilisons sur le web, la compression, les bibliothèques et les frameworks, le chargement et les cartographies de code source (source maps).
+hero_alt: Hero image of the Web Almanac characters cycling to power a website.
 authors: [housseindjirdeh]
 reviewers: [foxdavidj, paulcalvano, mathiasbynens, rviscomi]
 analysts: [rviscomi]
@@ -9,7 +10,7 @@ editors: [foxdavidj]
 translators: [borisschapira]
 discuss: 1756
 results: https://docs.google.com/spreadsheets/d/1kBTglETN_V9UjKqK_EFmFjRexJnQOmLLr-I2Tkotvic/
-housseindjirdeh_bio: Houssein est <i lang="en">Developer Advocate</i> chez Google. Il travaille sur la vitesse, la performance et l’écosystème des frameworks web. Il tweete sur <a href="https://twitter.com/hdjirdeh">@hdjirdeh</a> et blogue sur <a hreflang="en" href="https://houssein.me/">https://houssein.me/</a>.
+housseindjirdeh_bio: Houssein est <i lang="en">Developer Advocate</i> chez Google. Il travaille sur la vitesse, la performance et l’écosystème des frameworks web. Il tweete sur <a href="https://x.com/hdjirdeh">@hdjirdeh</a> et blogue sur <a hreflang="en" href="https://houssein.me/">https://houssein.me/</a>.
 featured_quote: JavaScript est la ressource la plus consommatrice que nous envoyons aux navigateurs&nbsp;; il doit être téléchargé, analysé, compilé et enfin exécuté. Bien que les navigateurs aient considérablement réduit le temps nécessaire pour analyser et compiler les scripts, le téléchargement et l’exécution sont devenus les étapes les plus coûteuses lorsque JavaScript est traité par une page web.
 featured_stat_1: 89 %
 featured_stat_label_1: des sites ont plus de code tiers que de code maison
@@ -298,7 +299,7 @@ Les autres bibliothèques JavaScript les plus utilisées comprennent les variant
 
 ### Frameworks et bibliothèques d'interface
 
-<p class="note">Comme mentionné dans notre <a href="./methodology#wappalyzer">méthodologie</a>, la bibliothèque de détection tierce utilisée dans HTTP Archive (Wappalyzer) a un certain nombre de limitations en ce qui concerne la manière dont elle détecte certains outils. Un ticket est ouvert concernant <a hreflang="en" href="https://github.com/AliasIO/wappalyzer/issues/2450">l’amélioration de la détection des bibliothèques et <span lang="en">frameworks</span> JavaScript</a>, ce qui aura eu un impact sur les résultats présentés ici.</p>
+<aside class="note">Comme mentionné dans notre <a href="./methodology#wappalyzer">méthodologie</a>, la bibliothèque de détection tierce utilisée dans HTTP Archive (Wappalyzer) a un certain nombre de limitations en ce qui concerne la manière dont elle détecte certains outils. Un ticket est ouvert concernant <a hreflang="en" href="https://github.com/AliasIO/wappalyzer/issues/2450">l’amélioration de la détection des bibliothèques et <span lang="en">frameworks</span> JavaScript</a>, ce qui aura eu un impact sur les résultats présentés ici.</aside>
 
 Au cours des dernières années, l’écosystème JavaScript a connu une augmentation du nombre de bibliothèques et <span lang="en">frameworks</span> open-source pour faciliter la création d’applications monopages (SPA). Une application monopage se caractérise par une page web qui charge une seule page HTML et utilise JavaScript pour modifier la page lors de l’interaction avec l’utilisateur au lieu de télécharger de nouvelles pages depuis le serveur. Bien que cela reste la principale prémisse des applications monopages, différentes approches de rendu du serveur peuvent encore être utilisées pour améliorer l’expérience de ces sites. Combien de sites utilisent ces types de <span lang="en">frameworks</span>&nbsp;?
 

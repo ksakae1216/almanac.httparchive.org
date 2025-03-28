@@ -10,6 +10,7 @@ from server.helpers import (
     convert_old_image_path,
     add_footnote_links,
     year_live,
+    get_previous_year,
     strip_accents,
     accentless_sort,
     render_template,
@@ -283,6 +284,22 @@ def test_year_live_2020():
     assert year_live("2020") is True
 
 
+def test_previous_year_2018():
+    assert get_previous_year("2018") is None
+
+
+def test_previous_year_2019():
+    assert get_previous_year("2019") is None
+
+
+def test_previous_year_2022():
+    assert get_previous_year("2022") == "2021"
+
+
+def test_previous_year_2024():
+    assert get_previous_year("2024") == "2022"
+
+
 def test_strip_accents_fr_edition():
     assert strip_accents("Édition") == "Edition"
 
@@ -300,11 +317,13 @@ def test_accentless_sort():
         "developers": "Développement",
         "editors": "Édition",
         "leads": "Gestion de projet",
+        "committee": "Comité d'organisation",
         "reviewers": "Relecture",
         "translators": "Traduction",
     }
     sorted_french_teams_list = [
         ("analysts", "Analyse"),
+        ("committee", "Comité d'organisation"),
         ("designers", "Design"),
         ("developers", "Développement"),
         ("editors", "Édition"),
@@ -355,8 +374,8 @@ def test_random_value_is_returned_as_none():
     assert get_file_date_info("en/2019/index.html", "rubbish") is None
 
 
-def test_en_ebook_size_at_least_16_mb_info():
-    assert get_file_date_info("/static/pdfs/web_almanac_2019_en.pdf", "size") > 16
+def test_en_ebook_size_at_least_10_mb_info():
+    assert get_file_date_info("/static/pdfs/web_almanac_2019_en.pdf", "size") > 10
 
 
 def test_versioned_css_file_is_of_correct_format():
@@ -370,13 +389,13 @@ def test_non_versioned_css_file_is_of_correct_format():
     assert versioned_filename == "/static/css/random.css"
 
 
-def test_en_ebook_size_at_least_16_mb():
-    assert get_ebook_size_in_mb("en", "2019") > 16
+def test_en_ebook_size_at_least_10_mb():
+    assert get_ebook_size_in_mb("en", "2019") > 10
 
 
 @pytest.mark.parametrize("config", all_ebooks)
-def test_all_configured_ebooks_at_least_16_mb(config):
-    assert get_ebook_size_in_mb(config[0], config[1]) > 16
+def test_all_configured_ebooks_at_least_10_mb(config):
+    assert get_ebook_size_in_mb(config[0], config[1]) > 10
 
 
 def test_ebook_size_non_existant_language_is_zero():

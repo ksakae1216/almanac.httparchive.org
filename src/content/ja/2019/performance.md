@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: パフォーマンス
 description: コンテンツの初回ペイント（FCP）、最初のバイトまでの時間（TTFB）、初回入力遅延（FID）を取り扱う2019 Web Almanac パフォーマンスの章。
+hero_alt: Hero image of Web Almanac characters images to a web page, while another Web Almanac character times them with a stopwatch.
 authors: [rviscomi]
 reviewers: [JMPerez,foxdavidj,sergeychernyshev,zeman]
 analysts: [rviscomi, raghuramakrishnan71]
@@ -9,7 +10,7 @@ editors: [rachellcostello]
 translators: [MSakamaki]
 discuss: 1762
 results: https://docs.google.com/spreadsheets/d/1zWzFSQ_ygb-gGr1H1BsJCfB7Z89zSIf7GX0UayVEte4/
-rviscomi_bio: Rick ViscomiはGoogle のシニア開発プログラムエンジニアで、HTTP ArchiveやChrome UX Reportなどのウェブ透過性プロジェクトに携わり、ウェブサイトの構築方法と体験の交差点を研究しています。Rickは、<a hreflang="en" href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBGvYSYO-VxOsaYQDw5rifJ">The State of the Web</a>のホストを務めており、専門家がウェブのトレンドについて議論しています。Rickは、ウェブのパフォーマンスをテストするためのガイドである <a hreflang="en" href="https://usingwpt.com">Using WebPageTest</a> の共著者であり、<a hreflang="en" href="https://dev.to/rick_viscomi">dev.to</a> でウェブについて頻繁に執筆していますし、<a href="https://twitter.com/rick_viscomi">@rick_viscomi </a> の Twitter でもウェブについて書いています。
+rviscomi_bio: Rick ViscomiはGoogle のシニア開発プログラムエンジニアで、HTTP ArchiveやChrome UX Reportなどのウェブ透過性プロジェクトに携わり、ウェブサイトの構築方法と体験の交差点を研究しています。Rickは、<a hreflang="en" href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBGvYSYO-VxOsaYQDw5rifJ">The State of the Web</a>のホストを務めており、専門家がウェブのトレンドについて議論しています。Rickは、ウェブのパフォーマンスをテストするためのガイドである <a hreflang="en" href="https://usingwpt.com">Using WebPageTest</a> の共著者であり、<a hreflang="en" href="https://dev.to/rick_viscomi">dev.to</a> でウェブについて頻繁に執筆していますし、<a href="https://x.com/rick_viscomi">@rick_viscomi </a> の Twitter でもウェブについて書いています。
 featured_quote: パフォーマンスはユーザー体験の内臓的な部分です。多くのウェブサイトでは、ページの読み込み時間を高速化してユーザー体験を向上させることは、コンバージョン率の向上につながります。逆に、パフォーマンスが悪いと、ユーザーは頻繁にコンバージョンしないし、不満でページを激怒してクリックしてしまうことさえ観察されています。
 featured_stat_1: 13%
 featured_stat_label_1: FCPが速いサイト
@@ -59,7 +60,7 @@ Web Almanacにある他のほとんどの章は、<a hreflang="en" href="https:/
 
 図7.1では、FCPの体験がWeb全体でどのように分散しているかを見ることができます。このチャートは、CrUXデータセット内にある数百万のWebサイト分布を1,000個のWebサイトに圧縮しており、図の縦線一つ一つはWebサイトを表しています。このグラフは、１秒未満の高速なFCP体験、３秒以上かかる遅い体験、その中間にある適度な体験（以前は平均と言われていた）の割合で並べられています。グラフには、ほぼ100%高速な体験を備えたWebサイトと、ほぼ100%低速な体験となっているWebサイトが存在しています。その中間にある、高速、適度、及び低速のパフォーマンスが混じり合ったWebサイトは、低速よりも適度か高速に傾いており、良い結果になっています。
 
-<p class="note">注意：ユーザー体験の低下があった場合、その理由が何であるか突き止めるのは難しいでしょう。Webサイト自体が不十分で非効率な構築がされている可能性があるかもしれませんが、ユーザーの通信速度が遅い可能性やキャッシュが空など、他の環境要因がある可能性があります。そのため、このフィールドデータを見てユーザー体験が悪いとわかっても、理由は必ずしもWebサイトにあるとは言えません。</p>
+<aside class="note">注意：ユーザー体験の低下があった場合、その理由が何であるか突き止めるのは難しいでしょう。Webサイト自体が不十分で非効率な構築がされている可能性があるかもしれませんが、ユーザーの通信速度が遅い可能性やキャッシュが空など、他の環境要因がある可能性があります。そのため、このフィールドデータを見てユーザー体験が悪いとわかっても、理由は必ずしもWebサイトにあるとは言えません。</aside>
 
 Webサイトが十分に**高速**かどうかを分類するために、新しい方法論である PageSpeed Insights (PSI)を使います。この方法はWebサイトのFCP体験の少なくとも75%が１秒未満でなければなりません。同様に、FCP体験がとても**低速**となる25%のWebサイトでは３秒以上かかっています。どちらの条件も満たさない場合、Webサイトのパフォーマンスは**適度**です。
 

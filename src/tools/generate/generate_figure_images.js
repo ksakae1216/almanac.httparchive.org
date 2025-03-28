@@ -18,21 +18,25 @@ const take_single_screenshot = async (graphUrl, filename) => {
   await page.goto(chartUrl, {
     waitUntil: 'networkidle2',
   });
-  const el = sheets_chart ? await page.$('#embed_chart') : await page.$('main');
+
+
+  // Charts are in #embed_chart, maps are in #c div div
+  const el = sheets_chart ? await page.$('#embed_chart, #c div div') : await page.$('main');
   await el.screenshot({ path: filename });
   await browser.close();
 }
 
 const generate_images = async (chapter_match) => {
+  let re;
 
   // This next bit is taken from generate_chapters.js, but only allow it to match one chapter
   if (chapter_match) {
     // Remove any trailing .md and replace all paths with brackets to capture components
     // en/2019/javascript.md -> (en)/(2019)/(javascript).md
     chapter_match = chapter_match.replace(/\.md$/,'');
-    chapter_match = chapter_match.replace(/^content[\/\\]*/,'');
+    chapter_match = chapter_match.replace(/^content[/\\]*/,'');
     chapter_match = (process.platform != 'win32')
-                ? 'content\/' +  '(' + chapter_match.replace(/\//g,')/(') + ').md'
+                ? 'content/' +  '(' + chapter_match.replace(/\//g,')/(') + ').md'
                 : 'content\\\\' +  '(' + chapter_match.replace(/\//g,')\\\\(') + ').md';
 
     re = new RegExp(chapter_match);
@@ -43,10 +47,10 @@ const generate_images = async (chapter_match) => {
 
   for (const file of await find_markdown_files()) {
 
-    let path, language, year, chapter;
+    let language, year, chapter;
 
     try {
-      [path, language, year, chapter] = file.match(re);
+      [, language, year, chapter] = file.match(re);
     } catch(error) {
       // No match - skip to next in for loop
       continue;
@@ -80,7 +84,6 @@ const generate_images = async (chapter_match) => {
     if (!fs.existsSync(folder_path)) {
       console.log(`  Creating directory: ${folder_path}`);
       fs.mkdirSync(folder_path);
-      tested_folder_exists = true;
     }
 
     for (const match of matches) {

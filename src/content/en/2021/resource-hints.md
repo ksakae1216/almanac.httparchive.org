@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Resource Hints
 description: Resource Hints chapter of the 2021 Web Almanac covering adoption of resource hints, their uses, bad practices, and their impact on performance.
+hero_alt: Hero image of Web Almanac characters lining up to HTML, JavaScript, and image resources in a line on the way to a web page.
 authors: [kevinfarrugia]
 reviewers: [siakaramalegos, tunetheweb, andydavies, samarpanda, westonruter]
 analysts: [Nithanaroy]
@@ -261,7 +262,7 @@ This same observation may be seen on a page's LCP, indicating that in many cases
 
 While this doesn't prove that having preload hints causes a page to get slower, having many hints does correlate with having slower performance. Every page has its unique requirements and it is impossible to apply a "one size fits all" approach, but in the majority of cases the number of preloaded resources should be kept low and resource prioritization should be delegated to the browser when possible.
 
-<p class="note">Note: In addition to the number of hints, the size of each preloaded resource has an impact on the website performance. The above figure does not take into consideration the size of each preloaded resource.</p>
+<aside class="note">Note: In addition to the number of hints, the size of each preloaded resource has an impact on the website performance. The above figure does not take into consideration the size of each preloaded resource.</aside>
 
 ## `rel="preload"`
 
@@ -269,7 +270,7 @@ With that being said, and the expectation that more websites will adopt `preload
 
 ### The `as` attribute
 
-The `as` attribute should be specified when using `rel="preload"` (or `rel="prefetch"`) to specify the type of resource being downloaded. Applying the correct `as` attribute allows the browser to prioritize the resource more accurately. For example, `preload as="script"` will get a low or medium priority, while `preload as="style"` would be assigned an internal request priority of _Highest_. The `as` attribute is required for caching the resource for future requests and applying the correct <a hreflang="en" href="https://developer.mozilla.org/docs/Web/HTTP/CSP">Content Security Policy</a>.
+The `as` attribute should be specified when using `rel="preload"` (or `rel="prefetch"`) to specify the type of resource being downloaded. Applying the correct `as` attribute allows the browser to prioritize the resource more accurately. For example, `preload as="script"` will get a low or medium priority, while `preload as="style"` would be assigned an internal request priority of _Highest_. The `as` attribute is required for caching the resource for future requests and applying the correct [Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP).
 
 {{ figure_markup(
   image="preload-as-attribute-values.png",
@@ -338,7 +339,7 @@ The `crossorigin` attribute is used to indicate whether [Cross-Origin Resource S
 
 #### `anonymous`
 
-The default value when no value is specified is `anonymous` and this value will set the credentials flag to <a hreflang="en" href="https://developer.mozilla.org/docs/Web/Security/Same-origin_policy">`same-origin`</a>. It is required when downloading resources protected by CORS. It is also a <a hreflang="en" href="https://drafts.csswg.org/css-fonts/#font-fetching-requirements">requirement</a> when downloading font files—even if they are on the same origin! If you omit the `crossorigin` attribute when the eventual request for the preloaded resource uses CORS, you will end up with a duplicate request since it won't match in the preload cache.
+The default value when no value is specified is `anonymous` and this value will set the credentials flag to [`same-origin`](https://developer.mozilla.org/docs/Web/Security/Same-origin_policy). It is required when downloading resources protected by CORS. It is also a <a hreflang="en" href="https://drafts.csswg.org/css-fonts/#font-fetching-requirements">requirement</a> when downloading font files—even if they are on the same origin! If you omit the `crossorigin` attribute when the eventual request for the preloaded resource uses CORS, you will end up with a duplicate request since it won't match in the preload cache.
 
 #### `use-credentials`
 
@@ -350,7 +351,7 @@ An oft-neglected feature available to `rel="preload"` is the ability to specify 
 
 In addition to the `media` attribute, the `<link>` element supports `imagesrcset` and `imagesizes` attributes which correspond to the `srcset` and `sizes` attributes on `<img>` elements. Using these attributes, you can use the same resource selection criteria that you would use on your image. Unfortunately, their adoption is very low (less than 1%); most likely owing to the lack of <a hreflang="en" href="https://caniuse.com/mdn-html_elements_link_imagesizes">support</a> on Safari.
 
-<p class="note">Note: The `media` attribute is not available on all `<link>` elements as the spec suggests, but it is only available on `rel="preload"`.</p>
+<aside class="note">Note: The `media` attribute is not available on all `<link>` elements as the spec suggests, but it is only available on `rel="preload"`.</aside>
 
 ### Bad practices
 
@@ -410,7 +411,7 @@ There are 17,861 cases of unrecognized values, with the most frequent error bein
 
 When using an incorrect `as` attribute value—as opposed to unrecognized value, such as using `style` instead of `script`—the browser will duplicate the file download as the request won't match the resource stored in the preload cache.
 
-<p class="note">Note: While <code>video</code> is included in the spec, it isn't supported by any browser and would be treated as an invalid value and ignored.</p>
+<aside class="note">Note: While <code>video</code> is included in the spec, it isn't supported by any browser and would be treated as an invalid value and ignored.</aside>
 
 #### Unused font files
 
@@ -635,7 +636,7 @@ Chrome 95 added experimental support for <a hreflang="en" href="https://datatrac
 
 ### Priority Hints
 
-Priority hints inform the browser of the relative importance of resources within the page, intending to prioritize critical resources and improve Core Web Vitals. Priority Hints are enabled through the document markup by adding the `importance` attribute to resources, such as `<img>` or `<script>`. The `importance` attribute accepts an enumeration of `high`, `low` or `auto` and by combining this with the type of resource, the browser would be able to assign the optimal fetch priority based on its heuristics. Priority Hints are available on Chrome 96 as an <a hreflang="en" href="https://developer.chrome.com/blog/origin-trials/">origin trial</a>.
+Priority hints inform the browser of the relative importance of resources within the page, intending to prioritize critical resources and improve Core Web Vitals. Priority Hints are enabled through the document markup by adding the `importance` attribute to resources, such as `<img>` or `<script>`. The `importance` attribute accepts an enumeration of `high`, `low` or `auto` and by combining this with the type of resource, the browser would be able to assign the optimal fetch priority based on its heuristics. Priority Hints are available on Chrome 96 as an <a hreflang="en" href="https://developer.chrome.com/blog/origin-trials">origin trial</a>.
 
 ## Conclusion
 

@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Toegankelijkheid
 description: Toegankelijkheidshoofdstuk van de Web Almanac 2019 over leesgemak, media, navigatiegemak en compatibiliteit met ondersteunende technologieën.
+hero_alt: Hero image of a robot with a blue, human accessibility icon on its front scanning a web page, while Web Almanac characters check some labels.
 authors: [nektarios-paisios, foxdavidj, kleinab]
 reviewers: [ljme]
 analysts: [dougsillars, rviscomi, foxdavidj]
@@ -56,7 +57,7 @@ Om ervoor te zorgen dat uw website onder deze omstandigheden leesbaar is, is het
 
 Slechts 22,04% van de sites gaf al hun tekst voldoende kleurcontrast. Of met andere woorden: 4 op de 5 sites hebben tekst die gemakkelijk op de achtergrond overgaat, waardoor deze onleesbaar wordt.
 
-<p class="note">Merk op dat we geen enkele tekst in afbeeldingen konden analyseren, dus onze gerapporteerde statistiek is een bovengrens van het totale aantal websites dat de kleurcontrasttest heeft doorstaan.</p>
+<aside class="note">Merk op dat we geen enkele tekst in afbeeldingen konden analyseren, dus onze gerapporteerde statistiek is een bovengrens van het totale aantal websites dat de kleurcontrasttest heeft doorstaan.</aside>
 
 ### Pagina's zoomen en schalen
 

@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Mobiel internet
 description: Het hoofdstuk over Mobiel Internet van de Web Almanac van 2020 behandelt het laden van pagina's, tekstuele inhoud, zoomen en schalen, knoppen en links en het gemak van het invullen van formulieren.
+hero_alt: Hero image of Web Almanac characters squeezing a web page onto a mobile screen.
 authors: [spanicker, mdiblasio]
 reviewers: [foxdavidj]
 analysts: [foxdavidj]
@@ -38,7 +39,7 @@ Naast het bovenstaande hebben we ook een niet-openbare Chrome-gegevensbron gebru
 
 Hoewel deze gegevens alleen worden verzameld van een subset van (aangemelde) Chrome-gebruikers, hebben ze geen last van het feit dat ze beperkt zijn tot startpagina's. Het is pseudoniem en bestaat uit histogrammen en gebeurtenissen.
 
-<p class="note">OPMERKING: Rapportage is ingeschakeld als de gebruiker een functie heeft ingeschakeld die browservensters synchroniseert, tenzij ze de instelling "Zoeken en browsen beter maken/URL's van pagina's die u bezoekt naar Google sturen" hebben uitgeschakeld.</p>
+<aside class="note">OPMERKING: Rapportage is ingeschakeld als de gebruiker een functie heeft ingeschakeld die browservensters synchroniseert, tenzij ze de instelling "Zoeken en browsen beter maken/URL's van pagina's die u bezoekt naar Google sturen" hebben uitgeschakeld.</aside>
 
 ## Verkeerstrends voor mobiel internet en desktop
 
@@ -50,13 +51,13 @@ Een <a hreflang="en" href="https://www.perficient.com/insights/research-hub/mobi
 
 Merk op dat deze sectie verwijst naar statistieken die specifiek voor dit hoofdstuk beschikbaar zijn gemaakt vanuit de niet-openbare Chrome-gegevensbron, [zie details hier](#gegevensbronnen). We gebruiken deze gegevens om het laden van pagina's op Android en Windows te beoordelen — als een proxy voor respectievelijk mobiel en desktop.
 
-<p class="note">OPMERKING: we verwijzen naar de gegevens in deze sectie als mobiel voor Android en desktop voor Windows.</p>
+<aside class="note">OPMERKING: we verwijzen naar de gegevens in deze sectie als mobiel voor Android en desktop voor Windows.</aside>
 
 #### Paginaladingen in verschillende herkomsten, gerangschikt op populariteit
 
 We keken naar het verkeer naar de herkomst op populariteit: hoe vaak bezoeken gebruikers een bepaalde herkomst, en wat zegt dat ons over de wereldwijde verspreiding op internet?
 
-Rick Byers [tweette](https://twitter.com/RickByers/status/1195342331588706306) deze distributie een jaar geleden, we keken naar de laatste gegevens. De grafiek toont ons de algehele verdeling over de herkomst op basis van hun populariteit, vastgelegd door hun bijdrage aan het percentage pagina's dat wordt geladen in Chrome.
+Rick Byers [tweette](https://x.com/RickByers/status/1195342331588706306) deze distributie een jaar geleden, we keken naar de laatste gegevens. De grafiek toont ons de algehele verdeling over de herkomst op basis van hun populariteit, vastgelegd door hun bijdrage aan het percentage pagina's dat wordt geladen in Chrome.
 
 {{ figure_markup(
   image="page-loads-across-origins-ranked-by-popularity.png",

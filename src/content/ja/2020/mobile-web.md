@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: モバイル・ウェブ
 description: 2020年版Web Almanacのモバイルウェブの章では、ページの読み込み、テキストコンテンツ、ズームとスケーリング、ボタンとリンク、フォームへの入力のしやすさなどを解説しています。
+hero_alt: Hero image of Web Almanac characters squeezing a web page onto a mobile screen.
 authors: [spanicker, mdiblasio]
 reviewers: [foxdavidj]
 analysts: [foxdavidj]
@@ -38,7 +39,7 @@ featured_stat_label_3: 75パーセンタイルのモバイル用LCP
 
 このデータは、（オプトインした）Chromeユーザーのサブセットからのみ収集されていますが、ホームページに限定されているという問題はありません。このデータは仮名で、ヒストグラムとイベントで構成されています。
 
-<p class="note">注：レポートは、ユーザーがブラウザのウィンドウを同期する機能を有効にしている場合、「検索と閲覧をより快適にする/訪問したページのURLをGoogleに送信する」の設定を無効にしていない限り、有効になります。</p>
+<aside class="note">注：レポートは、ユーザーがブラウザのウィンドウを同期する機能を有効にしている場合、「検索と閲覧をより快適にする/訪問したページのURLをGoogleに送信する」の設定を無効にしていない限り、有効になります。</aside>
 
 ## モバイルウェブとデスクトップのトラフィック傾向
 
@@ -50,13 +51,13 @@ perficient.comで公開されている<a hreflang="en" href="https://www.perfici
 
 このセクションでは、本章のために特別に公開されたChromeの非公開データソース[詳細はこちら](#データソース)の統計データを参照しています。このデータを使って、AndroidとWindowsでのページロードを評価しています（それぞれモバイルとデスクトップの代理としています）。
 
-<p class="note">注：この項では、Androidの場合はモバイル、Windowsの場合はデスクトップと表記することがあります。</p>
+<aside class="note">注：この項では、Androidの場合はモバイル、Windowsの場合はデスクトップと表記することがあります。</aside>
 
 #### オリジン間のページロードを人気順に表示
 
 オリジンへのトラフィックを人気度別に見ると、ユーザーが特定のオリジンにどのくらいの頻度でアクセスしているか、それによってウェブ上の世界的な分布がどうなっているかがわかります。
 
-Rick Byersが1年前にこの分布を[ツィート](https://twitter.com/RickByers/status/1195342331588706306)していたので、最新のデータを見てみました。このグラフは、オリジンの人気度による全体的な分布を、Chromeでのページロード（％）への貢献度で示したものです。
+Rick Byersが1年前にこの分布を[ツィート](https://x.com/RickByers/status/1195342331588706306)していたので、最新のデータを見てみました。このグラフは、オリジンの人気度による全体的な分布を、Chromeでのページロード（％）への貢献度で示したものです。
 
 {{ figure_markup(
   image="page-loads-across-origins-ranked-by-popularity.png",

@@ -2,9 +2,10 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Markup
 description: Markup chapter of the 2020 Web Almanac covering general observations, the use of elements and attributes, as well as trivia and trends.
+hero_alt: Hero image of Web Almanac characters as dressed as constructor workers putting together a web page from HTML element blocks.
 authors: [j9t, catalinred, iandevlin]
 j9t_bio: Jens Oliver Meiert is a web developer and author (<a hreflang="en" href="https://leanpub.com/css-optimization-basics"><cite>CSS Optimization Basics</cite></a>, <a hreflang="en" href="https://leanpub.com/web-development-glossary"><cite>The Web Development Glossary</cite></a>), who works as an engineering manager at <a hreflang="en" href="https://www.jimdo.com/">Jimdo</a>. He's an expert on web development specializing in HTML and CSS optimization. Jens contributes to technical standards and regularly writes about his work and research, particularly on his website, <a hreflang="en" href="https://meiert.com/en/">meiert.com</a>.
-catalinred_bio: Catalin Rosu is a front-end developer at <a hreflang="en" href="https://www.caphyon.com/">Caphyon</a> and currently works on <a hreflang="en" href="https://www.wattspeed.com/">Wattspeed</a>. He has a passion for web standards and a keen eye for great UX & UI, things he <a href="https://twitter.com/catalinred">tweets</a> and writes about on <a hreflang="en" href="https://catalin.red/">his website</a>.
+catalinred_bio: Catalin Rosu is a front-end developer at <a hreflang="en" href="https://www.caphyon.com/">Caphyon</a> and currently works on <a hreflang="en" href="https://www.wattspeed.com/">Wattspeed</a>. He has a passion for web standards and a keen eye for great UX & UI, things he <a href="https://x.com/catalinred">tweets</a> and writes about on <a hreflang="en" href="https://catalin.red/">his website</a>.
 iandevlin_bio: Ian Devlin is a web developer who advocates for good, semantic HTML, as well as accessibility. He once wrote a book about <a hreflang="en" href="https://www.peachpit.com/store/html5-multimedia-develop-and-design-9780321793935">HTML5 Multimedia</a>, and sporadically writes on <a hreflang="en" href="https://iandevlin.com/">his website</a> about the Web and other things. He currently works as a Senior Frontend Engineer at <a hreflang="de" href="https://www.real-digital.de/">real.digital</a> in Germany.
 reviewers: [zcorpan, matuzo, bkardell]
 analysts: [Tiggerito]
@@ -29,9 +30,9 @@ How do we use HTML, then, how great of a foundation do we have? In the introduct
 
 Last year's analysis was based on 5.8 million pages, of which 4.4 million were tested on desktop and 5.3 million on mobile. This year we analyzed 7.5 million pages, of which 5.6 million were tested on desktop and 6.3 million on mobile, using the [latest data](./methodology#websites) on the websites users are visiting in 2020. We do make some comparisons to last year, but just as we've tried to analyze additional metrics for new insights, we've also tried to impart our own personalities and perspectives throughout the chapter.
 
-<p class="note">
+<aside class="note">
   In this Markup chapter, we're focusing almost exclusively on HTML, rather than SVG or MathML, which are also considered markup languages. Unless otherwise noted, stats presented in this chapter refer to the set of mobile pages. Additionally, the data for all Web Almanac chapters is open and available. Take a look at <a hreflang="en" href="https://docs.google.com/spreadsheets/d/1Ta7amoUeaL4pILhWzH-SCzMX9PsZeb1x_mwrX2C4eY8/">the results</a> and <a hreflang="en" href="https://discuss.httparchive.org/t/2039">share your observations</a> with the community!
-</p>
+</aside>
 
 ## General
 
@@ -329,7 +330,7 @@ Here's a simple example showing the use of a `summary` in a `details` element:
 </details>
 ```
 
-A while ago, Steve Faulkner [pointed out](https://twitter.com/stevefaulkner/status/806474286592561152) how these two elements were used inadequately in the wild. As you can tell from the example above, for each `details` element you'd need a `summary` element that may only be used as the [first child](https://developer.mozilla.org/docs/Web/HTML/Element/summary#Usage_notes) of `details`.
+A while ago, Steve Faulkner [pointed out](https://x.com/stevefaulkner/status/806474286592561152) how these two elements were used inadequately in the wild. As you can tell from the example above, for each `details` element you'd need a `summary` element that may only be used as the [first child](https://developer.mozilla.org/docs/Web/HTML/Element/summary#Usage_notes) of `details`.
 
 Accordingly, we looked at the number of `details` and `summary` elements and it seems that they do continue to be misused. The count of `summary` elements is higher on both mobile and desktop, with a ratio of 1.11 `summary` elements for every `details` element on mobile, and 1.19 on desktop, respectively:
 
@@ -609,7 +610,7 @@ In our mobile dataset of 6.3 million pages, around 0.9 million pages (14.01%) co
   <figcaption>{{ figure_link(caption="Obsolete elements with more than 10,000 uses.", sheets_gid="1972617631", sql_file="pages_element_count_by_device_and_obsolete_elements.sql") }}</figcaption>
 </figure>
 
-Even `spacer` is still being used 1,584 times, and present on every 5,000th page. We know that Google has been using a `center` element on <a hreflang="en" href="https://www.google.com/">their homepage</a> <a hreflang="en" href="https://web.archive.org/web/19981202230410/https://www.google.com/">for 22 years now</a>, but why are there so many imitators?
+Even `spacer` is still being used 1,584 times, and present on every 5,000th page. We know that Google has been using a `center` element on <a hreflang="en" href="https://www.google.com/">their home page</a> <a hreflang="en" href="https://web.archive.org/web/19981202230410/https://www.google.com/">for 22 years now</a>, but why are there so many imitators?
 
 #### `isindex`
 
@@ -957,7 +958,7 @@ The two most popular ones stand out because they are almost twice as popular tha
 
 Attributes like `data-type`, `data-id`, and `data-src` can have multiple generic uses although `data-src` is used a lot with lazy image loading via JavaScript (e.g., Bootstrap 4). <a hreflang="en" href="https://getbootstrap.com/">Bootstrap</a> again explains the presence of `data-toggle`, where it's used as a state styling hook on toggle buttons. The <a hreflang="en" href="https://kenwheeler.github.io/slick/">Slick carousel plugin</a> is the source of `data-slick-index`, whereas `data-element_type` is part of <a hreflang="en" href="https://elementor.com/">Elementor's WordPress website builder</a>. Both `data-requiremodule` and `data-requirecontext`, then, are part of <a hreflang="en" href="https://requirejs.org/">RequireJS</a>.
 
-Interestingly, the use of native lazy loading on images is similar to that of `data-src`. <a hreflang="en" href="https://docs.google.com/spreadsheets/d/1ram47FshAjzvbQVJbAQPgxZN7PPOPCKIK67VJZCo92c/edit#gid=2109061092">3.86% of pages</a> use `loading="lazy"` on `<img>` elements. This appears to be growing very fast, as back in February, this number was about [0.8%](https://twitter.com/zcorpan/status/1237016679667970050). It's possible that these are being used together for a <a hreflang="en" href="https://addyosmani.com/blog/lazy-loading/">cross-browser solution</a>.
+Interestingly, the use of native lazy loading on images is similar to that of `data-src`. <a hreflang="en" href="https://docs.google.com/spreadsheets/d/1ram47FshAjzvbQVJbAQPgxZN7PPOPCKIK67VJZCo92c/edit#gid=2109061092">3.86% of pages</a> use `loading="lazy"` on `<img>` elements. This appears to be growing very fast, as back in February, this number was about [0.8%](https://x.com/zcorpan/status/1237016679667970050). It's possible that these are being used together for a <a hreflang="en" href="https://addyosmani.com/blog/lazy-loading/">cross-browser solution</a>.
 
 ## Miscellaneous
 
@@ -1018,9 +1019,9 @@ We had a look at the data and in order to better understand the results, we norm
 
 The results show that almost half of the pages we analyzed are using the typical viewport `content` value. Still, around 10% of mobile pages are entirely missing a proper `content` value for the viewport meta element, with the rest of them using an improper combination of `maximum-scale`, `minimum-scale`, `user-scalable=no`, or `user-scalable=0`.
 
-<p class="note">
+<aside class="note">
   For a while now, the Edge mobile browser allows users to zoom into a web page to <a hreflang="en" href="https://blogs.windows.com/windows-insider/2017/01/12/announcing-windows-10-insider-preview-build-15007-pc-mobile/">at least 500%</a>, regardless of the zoom settings defined by a web page employing the viewport meta element.
-</p>
+</aside>
 
 ### Favicons
 
@@ -1305,7 +1306,7 @@ Using `target="_blank"` has been known to be a <a hreflang="en" href="https://ma
 
 As a rule of thumb and for <a hreflang="en" href="https://www.nngroup.com/articles/new-browser-windows-and-tabs/">usability reasons</a>, it is recommended not to use `target="_blank"` in the first place.
 
-<p class="note">Within the latest Safari and Firefox versions, setting <code>target="_blank"</code> on <code>a</code> elements implicitly provides the same <code>rel</code> behavior as setting <code>rel="noopener"</code>. This is already <a hreflang="en" href="https://chromium-review.googlesource.com/c/chromium/src/+/1630010">implemented in Chromium</a> as well and will land in Chrome 88.</p>
+<aside class="note">Within the latest Safari and Firefox versions, setting <code>target="_blank"</code> on <code>a</code> elements implicitly provides the same <code>rel</code> behavior as setting <code>rel="noopener"</code>. This is already <a hreflang="en" href="https://chromium-review.googlesource.com/c/chromium/src/+/1630010">implemented in Chromium</a> as well and will land in Chrome 88.</aside>
 
 ## Conclusion
 
@@ -1319,7 +1320,7 @@ We've touched on some observations throughout the chapter, but as a reflection o
   sql_file="summary_pages_by_device_and_doctype.sql"
 ) }}
 
-Fewer pages land in quirks mode. In 2016, that number was at <a hreflang="en" href="https://discuss.httparchive.org/t/how-many-and-which-pages-are-in-quirks-mode/777">around 7.4%</a>. At the end of 2019, we observed [4.85%](https://twitter.com/zcorpan/status/1205242913908838400). And now, we're at about 3.97%. This trend, to paraphrase [Simon Pieters](./contributors#zcorpan) in his review of this chapter, seems clear and encouraging.
+Fewer pages land in quirks mode. In 2016, that number was at <a hreflang="en" href="https://discuss.httparchive.org/t/how-many-and-which-pages-are-in-quirks-mode/777">around 7.4%</a>. At the end of 2019, we observed [4.85%](https://x.com/zcorpan/status/1205242913908838400). And now, we're at about 3.97%. This trend, to paraphrase [Simon Pieters](./contributors#zcorpan) in his review of this chapter, seems clear and encouraging.
 
 Although we lack historic data to draw the full development picture, "meaningless" `div`, `span`, and `i` markup has pretty much [replaced](#top-elements) the `table` markup we've observed in the 1990s and early 2000s. While one may question whether `div` and `span` elements are always used without there being a semantically more appropriate alternative, these elements are still preferable to `table` markup, though, as during the heyday of the old web, these were seemingly used for everything but tabular data.
 
@@ -1335,6 +1336,6 @@ That compels us to close with an appeal: Pay attention to HTML. Focus on HTML. I
 
 For the next edition of the Web Almanac's chapter, let's prepare to look closer at the craft of writing HTML and, hopefully, how we've been improving on it.
 
-<p class="note">
+<aside class="note">
   We're leaving the rest open to you. What are your observations? What has caught your eye? What do you think has taken a turn for the worse, and what has improved? <a hreflang="en" href="https://discuss.httparchive.org/t/2039">Leave a comment</a> to share your thoughts!
-</p>
+</aside>

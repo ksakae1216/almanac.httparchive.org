@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Marcado Web
 description: Capítulo sobre marcado del Web Almanac de 2019 que cubre elementos utilizados, elementos personalizados, valor, productos y casos de uso comunes.
+hero_alt: Hero image of Web Almanac characters as dressed as constructor workers putting together a web page from HTML element blocks.
 authors: [bkardell]
 reviewers: [zcorpan, tomhodgins, matthewp]
 analysts: [rviscomi]
@@ -37,7 +38,7 @@ Mirar un recuento de frecuencia sin procesar no es especialmente útil, incluso 
 
 En lugar, como en el estudio original de Hixie, Lo que veremos es cuántos sitios incluyen cada elemento al menos una vez en su página de inicio.
 
-<p class="note">Nota: Esto es, en sí mismo, no sin algunos sesgos potenciales. Varios sitios pueden utilizar productos populares, lo que introduce un marcado no estándar, incluso "invisible" para autores individuales. Por lo tanto, se debe tener cuidado al reconocer que el uso no implica necesariamente el conocimiento directo del autor y la adopción consciente tanto como el servicio de una necesidad común, de una manera común. Durante nuestra investigación, encontramos varios ejemplos de esto, algunos los indicaremos.</p>
+<aside class="note">Nota: Esto es, en sí mismo, no sin algunos sesgos potenciales. Varios sitios pueden utilizar productos populares, lo que introduce un marcado no estándar, incluso "invisible" para autores individuales. Por lo tanto, se debe tener cuidado al reconocer que el uso no implica necesariamente el conocimiento directo del autor y la adopción consciente tanto como el servicio de una necesidad común, de una manera común. Durante nuestra investigación, encontramos varios ejemplos de esto, algunos los indicaremos.</aside>
 
 ## Principales elementos e información general
 
@@ -162,7 +163,7 @@ En el conjunto de datos de escritorio, recopilamos datos para los principales 4,
 
 Además, el 15% de las páginas de escritorio y el 16% de las páginas móviles contienen elementos obsoletos.
 
-<p class="note">Nota: Mucho de esto es muy probable debido al uso de productos en lugar de que los autores individuales sigan creando manualmente el marcado.</p>
+<aside class="note">Nota: Mucho de esto es muy probable debido al uso de productos en lugar de que los autores individuales sigan creando manualmente el marcado.</aside>
 
 {{ figure_markup(
   image="fig6.png",
@@ -258,7 +259,7 @@ Con esta perspectiva en mente acerca de cómo se ve el uso de características n
 
 Puede esperar que muchos de los elementos que medimos se usen solo en una sola página web, pero de hecho, todos los 5.048 elementos aparecen en más de una página. La menor cantidad de páginas en las que aparece un elemento de nuestro conjunto de datos es 15. Aproximadamente una quinta parte de ellas ocurre en más de 100 páginas. Alrededor del 7% se produce en más de 1.000 páginas.
 
-Para ayudar a analizar los datos, _hackee_ en conjunto una <a hreflang="en" href="https://rainy-periwinkle.glitch.me">pequeña herramienta con Glitch</a>. Puede usar esta herramienta usted mismo y por favor comparta un enlace permanente con el [@HTTPArchive](https://twitter.com/HTTPArchive) junto con sus observaciones. (Tommy Hodgins también ha construido una herramienta similar <a hreflang="en" href="https://github.com/tomhodgins/hade">CLI Tool</a> que se puede usar para explorar.)
+Para ayudar a analizar los datos, _hackee_ en conjunto una <a hreflang="en" href="https://rainy-periwinkle.glitch.me">pequeña herramienta con Glitch</a>. Puede usar esta herramienta usted mismo y por favor comparta un enlace permanente con el [@HTTPArchive](https://x.com/HTTPArchive) junto con sus observaciones. (Tommy Hodgins también ha construido una herramienta similar <a hreflang="en" href="https://github.com/tomhodgins/hade">CLI Tool</a> que se puede usar para explorar.)
 
 Veamos algunos datos.
 

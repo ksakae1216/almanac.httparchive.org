@@ -2,7 +2,7 @@
 # usage of allow and sandbox attribute of iframe elements, per page and over all iframe elements
 SELECT
   client,
-  COUNT(0) AS total_iframes,
+  COUNT(0) AS total_iframes, # Note: These are not the total number of iframes but only the number of iframes with allow/sandbox + 1 for each website without such iframes
   COUNTIF(allow IS NOT NULL) AS freq_allow,
   COUNTIF(allow IS NOT NULL) / COUNT(0) AS pct_allow_frames,
   COUNTIF(sandbox IS NOT NULL) AS freq_sandbox,
@@ -26,9 +26,10 @@ FROM (
       url,
       JSON_EXTRACT_ARRAY(JSON_EXTRACT_SCALAR(payload, '$._security'), '$.iframe-allow-sandbox') AS iframeAttrs
     FROM
-      `httparchive.pages.2020_08_01_*`)
-  LEFT JOIN UNNEST(iframeAttrs) AS iframeAttr
+      `httparchive.pages.2020_08_01_*`
   )
+  LEFT JOIN UNNEST(iframeAttrs) AS iframeAttr
+)
 GROUP BY
   client
 ORDER BY

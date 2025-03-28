@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Page Weight
 description: ページの重さが重要な理由、帯域幅、複雑なページ、経時的なページの重み、ページ要求、およびファイル形式をカバーする2019 Web Almanacのページの重さの章。
+hero_alt: Hero image of Web Almanac characters using a set of scales to weigh a web page against variuos boxes labelled with various different kilobytes.
 authors: [tammyeverts, khempenius]
 reviewers: [paulcalvano]
 analysts: [khempenius]
@@ -34,7 +35,7 @@ featured_stat_label_3: ホームページあたりのリクエストの中央値
 
 はい。一部のユーザーにとっては、高速で堅牢なページを構築できます。ただし、すべてのユーザー、特に帯域幅の制約やデータ制限へ対処するモバイル専用ユーザーにどのように影響するかという観点からページの肥大化に注意する必要があります。
 
-<p class="note" data-markdown="1">Tim Kadlecの魅力的なオンライン計算機、[What Does My Site Cost?]（https://whatdoesmysitecost.com/）をチェックしてください。これは、世界中の国のページのコスト（1人あたりのドルと国民総所得）を計算します。それは目を見張るものです。たとえば、執筆時点で2.79MBのAmazonのホームページの費用は、モーリタニアの1人当たりGNIの1日あたり1.89％です。世界のいくつかの地域の人々が数十ページを訪問するだけで一日の賃金をあきらめなければならないとき、ワールドワイドウェブはどれほどグローバルなのでしょうか？</p>
+<aside class="note">Tim Kadlecの魅力的なオンライン計算機、[What Does My Site Cost?]（https://whatdoesmysitecost.com/）をチェックしてください。これは、世界中の国のページのコスト（1人あたりのドルと国民総所得）を計算します。それは目を見張るものです。たとえば、執筆時点で2.79MBのAmazonのホームページの費用は、モーリタニアの1人当たりGNIの1日あたり1.89％です。世界のいくつかの地域の人々が数十ページを訪問するだけで一日の賃金をあきらめなければならないとき、ワールドワイドウェブはどれほどグローバルなのでしょうか？</aside>
 
 ### 帯域幅を増やすことは、Webパフォーマンスの魔法の弾丸ではありません
 

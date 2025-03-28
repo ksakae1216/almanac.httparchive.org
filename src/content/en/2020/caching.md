@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Caching
 description: Caching chapter of the 2020 Web Almanac covering cache-control, expires, TTLs, validity, vary, set-cookies, AppCache, Service Workers and opportunities.
+hero_alt: Hero image of Web Almanac characters and resources in parking slots in a car park with parking meters in from of them. The middle spot is labelled 304.
 authors: [roryhewitt, raghuramakrishnan71]
 reviewers: [jzyang]
 analysts: [raghuramakrishnan71]
@@ -71,9 +72,9 @@ Below figure shows how a typical request/response flow works for an object (e.g.
   )
 }}
 
-<p class="note">Note: Unless specified otherwise, all statistics in this chapter are for mobile, on the understanding that desktop statistics are similar. Where mobile and desktop statistics differ significantly, that is called out.
+<aside class="note">Note: Unless specified otherwise, all statistics in this chapter are for mobile, on the understanding that desktop statistics are similar. Where mobile and desktop statistics differ significantly, that is called out.
 
-Many of the responses used in this chapter are from web servers which use commonly-available server packages. While we may indicate best practices, the practices may not be possible if the software package used has a limited number of cache options.</p>
+Many of the responses used in this chapter are from web servers which use commonly-available server packages. While we may indicate best practices, the practices may not be possible if the software package used has a limited number of cache options.</aside>
 
 ## Caching guiding principles
 

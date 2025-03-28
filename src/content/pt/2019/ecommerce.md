@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Comércio eletrônico
 description: Capítulo de comércio eletrônico do Web Almanac 2019 que abrange plataformas de comércio eletrônico, cargas úteis, imagens, de terceiros, desempenho, SEO e PWAs.
+hero_alt: Hero image of a Web Almanac character at a super market checkout loading items from a shopping basket onto the conveyor belt while another character payes with a credit card.
 authors: [samdutton, alankent]
 reviewers: [voltek62]
 analysts: [rviscomi]
@@ -10,7 +11,7 @@ translators: [HakaCode]
 discuss: 1768
 results: https://docs.google.com/spreadsheets/d/1FUMHeOPYBgtVeMU5_pl2r33krZFzutt9vkOpphOSOss/
 samdutton_bio: Sam Dutton trabalha com a equipe do Google Chrome como Defensor do desenvolvedor desde 2011. Ele organizou e apresentou em uma série de eventos, criou e ministrou vários cursos de desenvolvimento da web e trabalhou em uma variedade de vídeos, codelabs e orientações escritas sobre PWA, desempenho, mídia, imagem e iniciativas de 'Próximo Bilhão de Usuários'. Ele mantém <a hreflang="en" href="https://simpl.info">simpl.info</a>, que fornece os exemplos mais simples possíveis de HTML, CSS e JavaScript. Sam cresceu na Austrália do Sul, foi para a universidade em Sydney e mora desde 1986 em Londres.
-alankent_bio: Alan Kent é um Developer Advocate do Google com foco em e-commerce e ecossistemas de conteúdo. Ele bloga em <a hreflang="en" href="https://alankent.me">alankent.me</a> e tweeta como <a href="https://twitter.com/akent99">@akent99</a>.
+alankent_bio: Alan Kent é um Developer Advocate do Google com foco em e-commerce e ecossistemas de conteúdo. Ele bloga em <a hreflang="en" href="https://alankent.me">alankent.me</a> e tweeta como <a href="https://x.com/akent99">@akent99</a>.
 featured_quote: Quase 10% das home pages neste estudo foram encontradas em uma plataforma de comércio eletrônico. Uma "plataforma de comércio eletrônico" é um conjunto de software ou serviços que permite criar e operar uma loja online, incluindo serviços pagos como Shopify, plataformas de software como Magento Open Source e plataformas hospedadas como Magento Commerce.
 featured_stat_1: 3.98%
 featured_stat_label_1: Sites que usam WooCommerce, a plataforma de comércio eletrônico mais popular
@@ -444,7 +445,7 @@ Os tamanhos da carga útil do HTML móvel não são muito diferentes dos do desk
   )
 }}
 
-<p class="note">Observe que, como nossa <a href="./methodology">metodologia</a> de coleta de dados não simula as interações do usuário em páginas como clicar ou rolar, as imagens com carregamento lento não seriam representadas nesses resultados.</p>
+<aside class="note">Observe que, como nossa <a href="./methodology">metodologia</a> de coleta de dados não simula as interações do usuário em páginas como clicar ou rolar, as imagens com carregamento lento não seriam representadas nesses resultados.</aside>
 
 As Figuras 13.12 e 13.13 acima mostram que a página média de comércio eletrônico tem 37 imagens e uma carga útil de imagens de 1.517 KB no celular, 40 imagens e 1.524 KB no desktop. 10% das páginas iniciais têm 90 ou mais imagens e uma carga útil de imagem de quase 6 MB!
 
@@ -471,7 +472,7 @@ Precisamos fazer mais análises para entender melhor por que alguns sites não e
   )
 }}
 
-<p class="note">Observe que alguns serviços de imagem ou CDNs entregarão automaticamente WebP (em vez de JPEG ou PNG) para plataformas que suportam WebP, mesmo para uma URL com sufixo `.jpg` ou `.png`. Por exemplo, <a hreflang="en" href="https://res.cloudinary.com/webdotdev/f_auto/w_500/IMG_20190113_113201.jpg">IMG_20190113_113201.jpg</a> retorna uma imagem WebP no Chrome. No entanto, a maneira como o HTTP Archive <a hreflang="en" href="https://github.com/HTTPArchive/legacy.httparchive.org/blob/31a25b9064a365d746d4811a1d6dda516c0e4985/bulktest/batch_lib.inc#L994">detecta o formato da imagem como o texto original é</a> e verificar primeiro as palavras-chave no tipo MIME e, em seguida, recorrer à extensão do arquivo. Isso significa que o formato para imagens com URLs como o acima será fornecido como WebP, uma vez que WebP é suportado pelo HTTP Archive como um agente de usuário.</p>
+<aside class="note">Observe que alguns serviços de imagem ou CDNs entregarão automaticamente WebP (em vez de JPEG ou PNG) para plataformas que suportam WebP, mesmo para uma URL com sufixo `.jpg` ou `.png`. Por exemplo, <a hreflang="en" href="https://res.cloudinary.com/webdotdev/f_auto/w_500/IMG_20190113_113201.jpg">IMG_20190113_113201.jpg</a> retorna uma imagem WebP no Chrome. No entanto, a maneira como o HTTP Archive <a hreflang="en" href="https://github.com/HTTPArchive/legacy.httparchive.org/blob/31a25b9064a365d746d4811a1d6dda516c0e4985/bulktest/batch_lib.inc#L994">detecta o formato da imagem como o texto original é</a> e verificar primeiro as palavras-chave no tipo MIME e, em seguida, recorrer à extensão do arquivo. Isso significa que o formato para imagens com URLs como o acima será fornecido como WebP, uma vez que WebP é suportado pelo HTTP Archive como um agente de usuário.</aside>
 
 ### PNG
 
@@ -552,7 +553,7 @@ Precisamos fazer mais pesquisas sobre por que muitos sites (aparentemente) não 
 
 ## Solicitações de terceiros e bytes
 
-Muitos sites - especialmente lojas online - carregam uma quantidade significativa de código e conteúdo de terceiros: para análises, testes A / B, rastreamento do comportamento do cliente, publicidade e suporte de mídia social. O conteúdo de terceiros pode ter um <a hreflang="en" href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript">impacto significativo no desempenho</a>. [Patrick Hulce](https://twitter.com/patrickhulce)'s <a hreflang="en" href="https://github.com/patrickhulce/third-party-web">third-party-web tool</a> é usado para determinar os pedidos de terceiros para este relatório, e isso é discutido mais no [Terceiros](./third-parties) capítulo.
+Muitos sites - especialmente lojas online - carregam uma quantidade significativa de código e conteúdo de terceiros: para análises, testes A / B, rastreamento do comportamento do cliente, publicidade e suporte de mídia social. O conteúdo de terceiros pode ter um <a hreflang="en" href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript">impacto significativo no desempenho</a>. [Patrick Hulce](https://x.com/patrickhulce)'s <a hreflang="en" href="https://github.com/patrickhulce/third-party-web">third-party-web tool</a> é usado para determinar os pedidos de terceiros para este relatório, e isso é discutido mais no [Terceiros](./third-parties) capítulo.
 
 {{ figure_markup(
   image="fig17.png",

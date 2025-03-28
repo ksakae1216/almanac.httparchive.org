@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: マークアップ
 description: 使われている要素、カスタム要素、価値、製品、及び一般的なユースケースについて抑えてある 2019 Web Almanac マークアップの章
+hero_alt: Hero image of Web Almanac characters as dressed as constructor workers putting together a web page from HTML element blocks.
 authors: [bkardell]
 reviewers: [zcorpan, tomhodgins, matthewp]
 analysts: [rviscomi]
@@ -37,7 +38,7 @@ featured_stat_label_3: カルーセルのバリエーションが見つかりま
 
 そのような方法を取らず、私達はHixieの元の研究のようにホームページに各要素が少なくとも1回は含まれているサイトの数に着目しました。
 
-<p class="note">注意: この方法は潜在的なバイアスが無いとは言い切れません。人気のある製品は複数のサイトで使われています。これにより個々の作成者は意識していない非標準のマークアップが導入されるでしょう。したがって、この方法は一般的なニーズに対応するのと同じように、作成者の直接的な知識や意識的な採用を意味しないことに注意する必要があります。調査中に、このような例はいくつか見つかりました。</p>
+<aside class="note">注意: この方法は潜在的なバイアスが無いとは言い切れません。人気のある製品は複数のサイトで使われています。これにより個々の作成者は意識していない非標準のマークアップが導入されるでしょう。したがって、この方法は一般的なニーズに対応するのと同じように、作成者の直接的な知識や意識的な採用を意味しないことに注意する必要があります。調査中に、このような例はいくつか見つかりました。</aside>
 
 ## 上位の要素と概説
 
@@ -162,7 +163,7 @@ featured_stat_label_3: カルーセルのバリエーションが見つかりま
 
 付け加えると、デスクトップページの15％とモバイルページの16％には、既に廃止された要素が含まれています。
 
-<p class="note">注意：この結果は、それぞれのの作成者がマークアップを手動で作成しているのではなく、何らかの製品を使っている為と考えられます。</p>
+<aside class="note">注意：この結果は、それぞれのの作成者がマークアップを手動で作成しているのではなく、何らかの製品を使っている為と考えられます。</aside>
 
 {{ figure_markup(
   image="fig6.png",
@@ -258,7 +259,7 @@ featured_stat_label_3: カルーセルのバリエーションが見つかりま
 
 測定したほとんどの要素は単一のWebページでのみ使用されると思われるかもしれませんが、実際には5,048個の要素すべてが複数のページに出現しています。データセット中、最も出現数が少ない要素は15ページに存在しています。そして、約5分の1は100ページ以上に存在します。約7％は1,000ページ以上に存在します。
 
-データ分析を支援するために<a hreflang="en" href="https://rainy-periwinkle.glitch.me">Glitchで小さなツール</a>を共同で作りました。このツールはあなたも使うことができます。そして、あなたの観測した内容をパーマリンクと共に[@HTTPArchive](https://twitter.com/HTTPArchive)へシェアしてください。（Tommy Hodginsは、同じように洞察に使える<a hreflang="en" href="https://github.com/tomhodgins/hade">CLIツール</a>を作成しています。）
+データ分析を支援するために<a hreflang="en" href="https://rainy-periwinkle.glitch.me">Glitchで小さなツール</a>を共同で作りました。このツールはあなたも使うことができます。そして、あなたの観測した内容をパーマリンクと共に[@HTTPArchive](https://x.com/HTTPArchive)へシェアしてください。（Tommy Hodginsは、同じように洞察に使える<a hreflang="en" href="https://github.com/tomhodgins/hade">CLIツール</a>を作成しています。）
 
 それでは、いくつかのデータを見ていきましょう。
 

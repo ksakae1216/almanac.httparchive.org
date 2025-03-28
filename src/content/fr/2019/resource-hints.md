@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Indices de Ressources
 description: Chapitre sur les indices de ressources du Web Almanac 2019, couvrant les usages de dns-prefetch, preconnect, preload, prefetch, les indices de priorités et le lazy loading natif.
+hero_alt: Hero image of Web Almanac characters lining up to HTML, JavaScript, and image resources in a line on the way to a web page.
 authors: [khempenius]
 reviewers: [andydavies, tunetheweb, yoavweiss]
 analysts: [rviscomi]
@@ -65,7 +66,7 @@ Comme l'utilisation des indices de ressources dans les en-têtes HTTP est très 
 
 ## Les indices de ressources
 
-<p class="note">Note: il n'y a pas de différence notable entre l'usage des indices de ressources sur les pages web destinées aux ordinateurs ou périphériques mobiles. C'est pourquoi, par souci de concision, ce chapitre n'inclut que les statistiques relatives aux mobiles.</p>
+<aside class="note">Note: il n'y a pas de différence notable entre l'usage des indices de ressources sur les pages web destinées aux ordinateurs ou périphériques mobiles. C'est pourquoi, par souci de concision, ce chapitre n'inclut que les statistiques relatives aux mobiles.</aside>
 
 <figure>
   <table>

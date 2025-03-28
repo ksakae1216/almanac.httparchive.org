@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: SEO
 description: Chapitre SEO du web Almanac 2019. Découvrez des statistiques sur le contenu, les meta tags, l'indexation, les liens, la performance web.
+hero_alt: Hero image of various web pages beneath a search field with Web Almanac characters shine a light on the pages and make various checks.
 authors: [ymschaap, rachellcostello, AVGP]
 reviewers: [clarkeclark, andylimn, AymenLoukil, catalinred, mattludwig]
 analysts: [ymschaap]
@@ -33,7 +34,7 @@ Notre étude se base sur des données de [Lighthouse](./methodology#lighthouse),
 
 Nos métriques personnalisées fournissent des informations qui, jusqu'à présent, n'avaient pas été exposées auparavant. Nous sommes maintenant en mesure de faire des constats sur l'adoption et la mise en œuvre d'éléments tels que des balises `link` avec attribut `hreflang`, l'éligibilité des résultats enrichis, l'utilisation de la balise `title` et même la navigation basée sur les ancres pour les applications d'une seule page (SPA).
 
-<p class="note">Remarque&nbsp;: nos données se limitent à l'analyse des pages d'accueil uniquement et n'ont pas été collectées à partir d'analyses de toutes les pages des sites web. Cela aura un impact sur de nombreuses mesures dont nous discuterons, nous avons donc ajouté toutes les limitations pertinentes à chaque fois que nous mentionnons une mesure personnalisée. En savoir plus sur ces limitations dans notre <a href="./methodology">méthodologie</a>.</p>
+<aside class="note">Remarque&nbsp;: nos données se limitent à l'analyse des pages d'accueil uniquement et n'ont pas été collectées à partir d'analyses de toutes les pages des sites web. Cela aura un impact sur de nombreuses mesures dont nous discuterons, nous avons donc ajouté toutes les limitations pertinentes à chaque fois que nous mentionnons une mesure personnalisée. En savoir plus sur ces limitations dans notre <a href="./methodology">méthodologie</a>.</aside>
 
 Lisez la suite pour en savoir plus sur l'état actuel du web et sa compatibilité pour les moteurs de recherche.
 
@@ -145,7 +146,7 @@ Il est recommandé de conserver un code de réponse HTTP `200 OK` pour toutes le
 
 Le code de réponse suivant le plus fréquemment trouvé sur mobile était le `302`, une redirection temporaire, qui a été trouvée sur 10,45 % des pages mobiles. C'était plus élevé que sur le bureau, avec seulement 6,71 % des pages d'accueil du bureau renvoyant un code d'état `302`. Cela pourrait être dû au fait que les <a hreflang="en" href="https://developers.google.com/search/mobile-sites/mobile-seo/separate-urls">pages d'accueil mobiles étaient des alternatives</a> vers une page de bureau équivalente, comme sur des sites non responsive qui ont des versions distinctes du site web pour chaque appareil.
 
-<p class="note">Remarque&nbsp;: nos résultats n'incluaient pas les codes d'état 4xx ou 5xx.</p>
+<aside class="note">Remarque&nbsp;: nos résultats n'incluaient pas les codes d'état 4xx ou 5xx.</aside>
 
 #### `noindex`
 
@@ -153,7 +154,7 @@ La directive `noindex` peut être indiquée dans le `HTML` ou bien dans les ent�
 
 96,93 % des pages mobiles ont réussi [l'audit d'indexation de Lighthouse](https://developers.google.com/web/tools/lighthouse/audits/indexing), ce qui signifie que ces pages ne contenaient pas de directive `noindex`. Cependant, cela signifie que 3,07 % des pages d'accueil mobiles ont une directive `noindex`, ce qui est préoccupant et signifie que Google n'a pas pu indexer ces pages.
 
-<p class="note">Les sites web inclus dans notre recherche proviennent de <a href="./methodology#chrome-ux-report">Chrome UX Report</a>, qui exclut les site web non publiques. Il s'agit d'une source importante de biais, car nous ne sommes pas en mesure d'analyser les sites que Chrome juge non publics. Plus de détails sur notre <a href="./methodology#websites">méthodologie</a>.</p>
+<aside class="note">Les sites web inclus dans notre recherche proviennent de <a href="./methodology#chrome-ux-report">Chrome UX Report</a>, qui exclut les site web non publiques. Il s'agit d'une source importante de biais, car nous ne sommes pas en mesure d'analyser les sites que Chrome juge non publics. Plus de détails sur notre <a href="./methodology#websites">méthodologie</a>.</aside>
 
 #### Canonicalisation
 
@@ -263,7 +264,7 @@ Les étoiles d'avis ne se trouvent que sur 1,09 % des pages d'accueil du web (v
 
 ### Internationalisation
 
-L'internationalisation est l'un des aspects les plus complexes du référencement naturel, même [selon certains employés de la recherche Google](https://twitter.com/JohnMu/status/965507331369984002). L'internationalisation du référencement se concentre sur la diffusion du bon contenu à partir d'un site web avec plusieurs versions linguistiques ou nationales et sur le ciblage du contenu vers la langue et l'emplacement spécifiques de l'utilisateur.
+L'internationalisation est l'un des aspects les plus complexes du référencement naturel, même [selon certains employés de la recherche Google](https://x.com/JohnMu/status/965507331369984002). L'internationalisation du référencement se concentre sur la diffusion du bon contenu à partir d'un site web avec plusieurs versions linguistiques ou nationales et sur le ciblage du contenu vers la langue et l'emplacement spécifiques de l'utilisateur.
 
 Alors que 38,40 % des sites de bureau (33,79 % sur mobile) ont l'attribut HTML `lang` réglé sur anglais, seulement 7,43 % (6,79 % sur mobile) des sites contiennent également un attribut `hreflang` de balise `link` pointant vers une autre version linguistique. Cela suggère que la grande majorité des sites web que nous avons analysés n'offrent pas de versions distinctes de leur page d'accueil qui nécessiteraient un ciblage linguistique - sauf si ces versions distinctes existent mais n'ont pas été configurées correctement.
 

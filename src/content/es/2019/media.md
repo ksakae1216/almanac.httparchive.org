@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Media
 description: Capítulo Multimedia del 2019 Web Almanac que cubre los tamaños y formatos de archivo de imagen, las imágenes adaptables (responsive), los client hints, el lazy loading, la accesibilidad y los vídeos.
+hero_alt: Hero image of Web Almanac characters projecting an image onto a screen while other Web Almanac characters walk to cinema seats with popcorn to watch the projection.
 authors: [colinbendell, dougsillars]
 reviewers: [ahmadawais, eeeps]
 analysts: [dougsillars, rviscomi]
@@ -9,8 +10,8 @@ editors: [tunetheweb]
 translators: [garcaplay]
 discuss: 1759
 results: https://docs.google.com/spreadsheets/d/1hj9bY6JJZfV9yrXHsoCRYuG8t8bR-CHuuD98zXV7BBQ/
-colinbendell_bio: <i lang="en">Colin is part of the CTO Office at <a hreflang="en" href="https://cloudinary.com/">Cloudinary</a> and co-author of the OReilly book <a hreflang="en" href="https://www.oreilly.com/library/view/high-performance-images/9781491925799/">High Performance Images</a>. He spends much of his time at the intersection of high volume data, media, browsers and standards. You can find him on tweeting <a href="https://twitter.com/colinbendell">@colinbendell</a> and at blogging at <a hreflang="en" href="https://bendell.ca/">https://bendell.ca</a>.</i>
-dougsillars_bio: <i lang="en">Doug Sillars is a freelance digital nomad working on the intersection of performance and media. He tweets <a href="https://twitter.com/dougsillars">@dougsillars</a>, and blogs regularly at <a hreflang="en" href="https://dougsillars.com">dougsillars.com</a>.</i>
+colinbendell_bio: <i lang="en">Colin is part of the CTO Office at <a hreflang="en" href="https://cloudinary.com/">Cloudinary</a> and co-author of the OReilly book <a hreflang="en" href="https://www.oreilly.com/library/view/high-performance-images/9781491925799/">High Performance Images</a>. He spends much of his time at the intersection of high volume data, media, browsers and standards. You can find him on tweeting <a href="https://x.com/colinbendell">@colinbendell</a> and at blogging at <a hreflang="en" href="https://bendell.ca/">https://bendell.ca</a>.</i>
+dougsillars_bio: <i lang="en">Doug Sillars is a freelance digital nomad working on the intersection of performance and media. He tweets <a href="https://x.com/dougsillars">@dougsillars</a>, and blogs regularly at <a hreflang="en" href="https://dougsillars.com">dougsillars.com</a>.</i>
 featured_quote: Las imágenes, animaciones y vídeos son una parte importante de la experiencia web. Son importantes por muchas razones&colon; ayudan a contar historias, atraen a la audiencia y proporcionan expresión artística de una forma que a menudo no puede ser conseguida fácilmente a través de otras tecnologías web. La importancia de estos recursos multimedia puede ser demostrada de dos formas&colon; por la gran cantidad de bytes que se requieren para descargar cada página, y también por la cantidad de píxeles que componen esos recursos.
 featured_stat_1: 1 MB
 featured_stat_label_1: Tamaño medio de las páginas de inicio
@@ -37,7 +38,7 @@ Mientras que los recursos multimedia son esenciales para la experiencia visual, 
 
 Primero, la carga de red requerida para descargar estos bytes puede ser alta y en un móvil o una red lenta (como la de las cafeterías o el Uber) puede ralentizar drásticamente el [rendimiento](./performance) de la página. Las imágenes son la petición del navegador de menor prioridad pero pueden bloquear fácilmente la descarga del CSS y JavaScript. Esto, por sí mismo, puede ralentizar el renderizado de la página. Aun así, en otras ocasiones, el contenido de la imagen es, para el usuario, la indicación visual de que la página se ha cargado. Por lo tanto, las transferencias lentas del contenido visual pueden dar la impresión de una página web lenta.
 
-La segunda consecuencia es el coste económico que supone para el usuario. Normalmente, este aspecto es poco tenido en cuenta ya que no afecta al dueño del sitio web, sino al usuario final.  Como anécdota, se ha difundido que algunos mercados, [como el de Japón](https://twitter.com/yoavweiss/status/1195036487538003968?s=20), han visto una caída en las compras hechas por estudiantes a finales de mes, cuando alcanzan los límites de datos y no pueden ver el contenido visual.
+La segunda consecuencia es el coste económico que supone para el usuario. Normalmente, este aspecto es poco tenido en cuenta ya que no afecta al dueño del sitio web, sino al usuario final.  Como anécdota, se ha difundido que algunos mercados, [como el de Japón](https://x.com/yoavweiss/status/1195036487538003968?s=20), han visto una caída en las compras hechas por estudiantes a finales de mes, cuando alcanzan los límites de datos y no pueden ver el contenido visual.
 
 Es más, el coste económico de visitar estos sitios web en diferentes partes del mundo es desproporcionado. En la mediana y en el percentil 90, la cantidad de bytes por imagen es de 1 MB y de 1,9 MB respectivamente. A través de <i lang="en"><a hreflang="en" href="https://whatdoesmysitecost.com/#gniCost">WhatDoesMySiteCost.com</a></i>, podemos ver que el Producto Interior Bruto (PIB) per cápita en Madagascar supone al usuario un coste tal que la carga de una sola página web del percentil 90 equivaldría al 2,6% del ingreso bruto diario. Por el contrario, en Alemania esto supondría el 0,3% del ingreso bruto diario.
 
@@ -85,7 +86,7 @@ Para los dispositivos móviles usados en el rastreo (<i lang="en">crawl</i>) de 
 
 Si tuviéramos una imagen que ocupase perfectamente la totalidad de la pantalla, el ratio de relleno de píxeles sería de 1x. Por supuesto, rara vez una página web ocupa la pantalla completa con una única imagen. El contenido multimedia suele mezclarse con el diseño y otro tipo de contenido. Un valor superior a 1x significa que el diseño requiere que el usuario haga scroll para ver el resto de la imagen.
 
-<p class="note">Nota: esto es únicamente analizando el diseño CSS para tanto el <i lang="en">DPR</i> como para la cantidad de contenido del diseño. No está evaluándose la efectividad de las imágenes <i lang="en">responsive</i> o la efectividad de facilitar un contenido con alto DPR.</p>
+<aside class="note">Nota: esto es únicamente analizando el diseño CSS para tanto el <i lang="en">DPR</i> como para la cantidad de contenido del diseño. No está evaluándose la efectividad de las imágenes <i lang="en">responsive</i> o la efectividad de facilitar un contenido con alto DPR.</aside>
 
 {{ figure_markup(
   image="fig5_image_pixel_volume_v_css_pixels.png",
@@ -110,7 +111,7 @@ Mientras que el enfoque utilizado para imágenes, vídeos y animaciones son, a g
 * **<i lang="en">Lazy loading</i>** - para trasladar solamente contenido que pueda ser visto por un humano.
 * **Accesibilidad** - asegurando una experiencia consistente para todos los seres humanos.
 
-<p class="note">Una advertencia a la hora de interpretar estos resultados. Las páginas webs rastreadas para el Web Almanac fueron rastreadas con un navegador Chrome. Esto significa que la negociación de contenido que pueda estar mejor integrada para Safari o Firefox podría no estar representada en este conjunto de datos. Por ejemplo, el uso de formatos de archivos como JPEG2000, JPEG-XR, HEVC, y HEIC no están representados porque estos no son compatibles de forma nativa con Chrome. Esto no significa que la web no contenga estos otros formatos o experiencias. Del mismo modo, Chrome tiene soporte nativo para <i lang="en">lazy loading</i> (desde la v76) el cual no está disponible en otros navegadores. Puedes leer más sobre estas excepciones en <a href="./methodology">Metodología</a>.</p>
+<aside class="note">Una advertencia a la hora de interpretar estos resultados. Las páginas webs rastreadas para el Web Almanac fueron rastreadas con un navegador Chrome. Esto significa que la negociación de contenido que pueda estar mejor integrada para Safari o Firefox podría no estar representada en este conjunto de datos. Por ejemplo, el uso de formatos de archivos como JPEG2000, JPEG-XR, HEVC, y HEIC no están representados porque estos no son compatibles de forma nativa con Chrome. Esto no significa que la web no contenga estos otros formatos o experiencias. Del mismo modo, Chrome tiene soporte nativo para <i lang="en">lazy loading</i> (desde la v76) el cual no está disponible en otros navegadores. Puedes leer más sobre estas excepciones en <a href="./methodology">Metodología</a>.</aside>
 
 Es raro encontrar una página web que no utilice imágenes. A lo largo de los años, han aparecido muchos formatos de archivo diferentes para ayudar a mostrar el contenido en la web, cada uno abordando un problema diferente. Principalmente, hay 4 formatos de imagen universales: JPEG, PNG, GIF, y SVG. Además, Chrome ha mejorado el canal multimedia y añadido soporte a un quinto formato de imagen: WebP. Otros navegadores, del mismo modo, han añadido soporte para JPEG2000 (Safari), JPEG-XL (IE y Edge) y HEIC (WebView solamente en Safari).
 
@@ -321,7 +322,7 @@ La utilidad de `srcset` normalmente depende de la precisión de la media query `
 
 {{ figure_markup(
   image="fig16_top_patterns_of_img_sizes.png",
-  caption="Top de patrones de <code><img sizes></code>.",
+  caption="Top de patrones de `<img sizes>`.",
   description="Gráfico de barras que muestra que 11,3 millones de imágenes usan 'img sizes=`(max-width: 300px) 100vw, 300px`', 1,60 millones usan 'auto', 1 millón usan 'img sizes=`(max-width: 767px) 89vw...etc.`', 0,23 millones usan '100vw' y 0,13 millones usan '300px'",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSViHIntdF6-bHAI0cl1HelY_X8rR4lf0P3W2Y8I5SyVMxG-ptggTHfWA0qrrU47RvuAydLE6Zex6L3/pubchart?oid=663985412&format=interactive"
   )

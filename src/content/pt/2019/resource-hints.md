@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Dicas de recursos
 description: Capítulo de dicas de recursos do Web Almanac 2019 que cobre o uso de dns-prefetch, preconnect, preload, prefetch, priority hints, e native lazy loading.
+hero_alt: Hero image of Web Almanac characters lining up to HTML, JavaScript, and image resources in a line on the way to a web page.
 authors: [khempenius]
 reviewers: [andydavies, tunetheweb, yoavweiss]
 analysts: [rviscomi]
@@ -65,7 +66,7 @@ Como o uso de dicas de recursos em cabeçalhos HTTP é muito baixo, o restante d
 
 ## Dicas de recursos
 
-<p class="note">Observação: não houve diferença perceptível entre os padrões de uso de dicas de recursos em dispositivos móveis e computadores. Assim, para fins de concisão, este capítulo inclui apenas as estatísticas para dispositivos móveis.</p>
+<aside class="note">Observação: não houve diferença perceptível entre os padrões de uso de dicas de recursos em dispositivos móveis e computadores. Assim, para fins de concisão, este capítulo inclui apenas as estatísticas para dispositivos móveis.</aside>
 
 <figure>
   <table>

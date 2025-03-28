@@ -292,6 +292,7 @@
 }
 
 .authors,
+.citation-box h2,
 .authors h2,
 .chapter-links,
 .chapter-links h2,
@@ -380,6 +381,18 @@
   height: auto;
   margin-right: 4px;
   margin-right: 0.25rem;
+}
+
+.citation-box pre {
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: monospace;
+  background-color: #f9f9f9;
+  overflow-x: auto;
+  white-space: pre-wrap; /* Allow wrapping of long lines */
+  margin: 0;
 }
 
 #chapter-navigation {
@@ -672,6 +685,7 @@ figure .big-number {
   font: bold 128px/1em 'Poppins', sans-serif;
   font: bold 8rem/1em 'Poppins', sans-serif;
   color: #62718b;
+  /* stylelint-disable-next-line declaration-property-value-keyword-no-deprecated */
   word-break: break-word;
   overflow-wrap: break-word;
   margin: 0.1em 0;
@@ -682,6 +696,7 @@ figure .medium-number {
   font: bold 48px/1em 'Poppins', sans-serif;
   font: bold 3rem/1em 'Poppins', sans-serif;
   color: #62718b;
+  /* stylelint-disable-next-line declaration-property-value-keyword-no-deprecated */
   word-break: break-word;
   overflow-wrap: break-word;
 }
@@ -691,6 +706,7 @@ figure .really-big-number {
   font: bold 24px/1em 'Poppins', sans-serif;
   font: bold 1.5rem/1em 'Poppins', sans-serif;
   color: #62718b;
+  /* stylelint-disable-next-line declaration-property-value-keyword-no-deprecated */
   word-break: break-word;
   overflow-wrap: break-word;
 }

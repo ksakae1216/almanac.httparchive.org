@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: JavaScript
 description: Capítulo de JavaScript de 2019 Web Almanac que cobre quanto JavaScript usamos na web, compressão, bibliotecas e estruturas, carregamento e mapas de origem.
+hero_alt: Hero image of the Web Almanac characters cycling to power a website.
 authors: [housseindjirdeh]
 reviewers: [foxdavidj, paulcalvano, mathiasbynens, rviscomi]
 analysts: [rviscomi]
@@ -9,7 +10,7 @@ editors: [foxdavidj]
 translators: [HakaCode]
 discuss: 1756
 results: https://docs.google.com/spreadsheets/d/1kBTglETN_V9UjKqK_EFmFjRexJnQOmLLr-I2Tkotvic/
-housseindjirdeh_bio: Houssein é um advogado do desenvolvedor do Google que trabalha com velocidade, desempenho e no ecossistema da estrutura da web. Ele os tweets em <a href="https://twitter.com/hdjirdeh">@hdjirdeh</a> e bloga em <a hreflang="en" href="https://houssein.me/">https://houssein.me/</a>.
+housseindjirdeh_bio: Houssein é um advogado do desenvolvedor do Google que trabalha com velocidade, desempenho e no ecossistema da estrutura da web. Ele os tweets em <a href="https://x.com/hdjirdeh">@hdjirdeh</a> e bloga em <a hreflang="en" href="https://houssein.me/">https://houssein.me/</a>.
 featured_quote: JavaScript é o recurso mais caro que enviamos aos navegadores; tendo que ser baixado, analisado, compilado e finalmente executado. Embora os navegadores tenham diminuído significativamente o tempo que leva para analisar e compilar scripts, download e execução tornaram as etapas mais caras quando o JavaScript é processado por uma página da web.
 featured_stat_1: 89%
 featured_stat_label_1: Sites com mais código de terceiros do que de origem
@@ -298,7 +299,7 @@ Outras bibliotecas JavaScript comumente usadas incluem variantes jQuery (jQuery 
 
 ### Frameworks e bibliotecas de UI
 
-<p class="note">Conforme mencionado em nossa <a href="./methodology#wappalyzer">metodologia</a>, a biblioteca de detecção de terceiros usada no HTTP Archive (Wappalyzer) tem uma série de limitações com relação à maneira como detecta certas ferramentas. Há um problema aberto <a hreflang="en" href="https://github.com/AliasIO/wappalyzer/issues/2450">para melhorar a detecção de bibliotecas e frameworks JavaScript</a>, que terá impactado os resultados apresentados aqui.</p>
+<aside class="note">Conforme mencionado em nossa <a href="./methodology#wappalyzer">metodologia</a>, a biblioteca de detecção de terceiros usada no HTTP Archive (Wappalyzer) tem uma série de limitações com relação à maneira como detecta certas ferramentas. Há um problema aberto <a hreflang="en" href="https://github.com/AliasIO/wappalyzer/issues/2450">para melhorar a detecção de bibliotecas e frameworks JavaScript</a>, que terá impactado os resultados apresentados aqui.</aside>
 
 Nos últimos anos, o ecossistema JavaScript tem visto um aumento em bibliotecas e frameworks de código aberto para facilitar a construção de **aplicativos de página única** (SPAs por sua sigla em Inglês). Um aplicativo de página única é caracterizado como uma página da web que carrega uma única página HTML e usa JavaScript para modificar a página na interação do usuário em vez de procurar novas páginas no servidor. Embora essa continue sendo a premissa principal dos aplicativos de página única, diferentes abordagens de renderização de servidor ainda podem ser usadas para aprimorar a experiência de tais sites. Quantos sites usam este tipo de framework?
 

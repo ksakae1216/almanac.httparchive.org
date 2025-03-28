@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Mobile Web
 description: Mobile Web chapter of the 2019 Web Almanac covering page loading, textual content, zooming and scaling, buttons and links, and ease of filling out forms.
+hero_alt: Hero image of Web Almanac characters squeezing a web page onto a mobile screen.
 authors: [foxdavidj]
 reviewers: [AymenLoukil, logicalphase]
 analysts: [ymschaap, rviscomi]
@@ -81,7 +82,7 @@ Let's delve deeper and look at another metric that focuses more on *how well* ea
 - It's also delivered as text to the browser. So it compresses well, and should be delivered faster than just a screenshot of the page.
 - So if the total amount of JavaScript a page downloads _alone_ (not including images, css, etc) is larger than a PNG screenshot of the viewport, we are using far too much JavaScript. At this point, it'd be faster just to send that screenshot to get the initial page state!
 
-<p class="note">The *JavaScript Bloat Score* is defined as: (total JavaScript size) / (size of PNG screenshot of viewport). Any number greater than 1.0 means it's faster to send a screenshot.</p>
+<aside class="note">The *JavaScript Bloat Score* is defined as: (total JavaScript size) / (size of PNG screenshot of viewport). Any number greater than 1.0 means it's faster to send a screenshot.</aside>
 
 The results of this? Of the 5+ million websites analyzed, 75.52% were bloated with JavaScript. We have a long way to go.
 
@@ -101,7 +102,7 @@ One of the most beautiful parts of the web is how web pages load progressively b
 
 {{ figure_markup(
   image="example-of-a-site-shifting-content-while-it-loads-lookzook.gif",
-  caption="Example of shifting content distracting a reader. CLS total of 42.59%. Image courtesy of LookZook",
+  caption="Example of shifting content distracting a reader. CLS total of 42.59%. Image courtesy of LookZook.",
   description="A video showing a website progressively load. The text is displayed quickly, but as images continue to load the text gets shifted further and further down the page each time—making it very frustrating to read. The calculated CLS of this example is 42.59%. Image courtesy of LookZook",
   width=360,
   height=640
@@ -207,7 +208,7 @@ Designing tap targets appropriately to mitigate this issue can be difficult beca
 
 {{ figure_markup(
   image="example-of-easy-to-hit-tap-targets-lookzook.png",
-  caption="Standards for sizing and spacing tap targets. Image courtesy of LookZook",
+  caption="Standards for sizing and spacing tap targets. Image courtesy of LookZook.",
   description="A diagram displaying two examples of difficult to tap buttons. The first example shows two buttons with no spacing between them; An example below it shows the same buttons but with the recommended amount of spacing between them (8px or 1-2mm). The second example shows a button far too small to tap; An example below it shows the same button enlarged to the recommended size of 40-48px (around 8mm). Image courtesy of LookZook",
   width=800,
   height=430
@@ -222,7 +223,7 @@ Some designers love to use icons in place of text — they can make our sites lo
 
 This is why it's important to avoid any confusion and add supporting text and labels to your buttons. As of now, at least 28.59% of sites include a button with only a single icon with no supporting text.
 
-<p class="note">Note: The reported number above is only a lower bound. During our analysis, we only included buttons using font icons with no supporting text. Many buttons now use SVGs instead of font-icons however, so in future runs we will be including them as well.</p>
+<aside class="note">Note: The reported number above is only a lower bound. During our analysis, we only included buttons using font icons with no supporting text. Many buttons now use SVGs instead of font-icons however, so in future runs we will be including them as well.</aside>
 
 ## Semantic form fields
 
@@ -255,7 +256,7 @@ When analyzing sites containing an email input, 56.42% use `type="email"`. Simil
       <td class="numeric">833</td>
     </tr>
   </table>
-  <figcaption>{{ figure_link(caption="Most commonly used invalid input types") }}</figcaption>
+  <figcaption>{{ figure_link(caption="Most commonly used invalid input types.") }}</figcaption>
 </figure>
 
 Make sure to educate yourself and others on the large amount of input types available and double-check that you don't have any typos like the most common ones in Figure 12.7 above.
@@ -277,7 +278,7 @@ Currently, only 29.62% of pages with input fields utilize this feature.
 
 Enabling users to copy and paste their passwords into your page is one way that allows them to use password managers. Password managers help users generate (and remember) strong passwords and fill them out automatically on web pages. Only 0.02% of web pages tested disable this functionality.
 
-<p class="note">Note: While this is very encouraging, this may be an underestimation due to the requirement of our <a href="./methodology">Methodology</a> to only test home pages. Interior pages, like login pages, are not tested.</p>
+<aside class="note">Note: While this is very encouraging, this may be an underestimation due to the requirement of our <a href="./methodology">Methodology</a> to only test home pages. Interior pages, like login pages, are not tested.</aside>
 
 ## Conclusion
 
@@ -296,7 +297,7 @@ The mobile web has now been around long enough for there to be an entire generat
   )
 }}
 
-<p class="note" data-markdown="1">Notes:
+<aside class="note" data-markdown="1">Notes:
 
 1. We defined sites making a mobile effort as those who adjust their designs for smaller screens. Or rather, those which have at least one CSS breakpoint at 600px or less.
 
@@ -307,4 +308,4 @@ The mobile web has now been around long enough for there to be an entire generat
 4. The total number of active smartphones was found by totaling the number of active Androids and iPhones (made public by Apple and Google), and a bit of math to account for Chinese internet-connected phones. <a hreflang="en" href="https://www.ben-evans.com/benedictevans/2019/5/28/the-end-of-mobile">More info here</a>.
 
 5. The 1.6 billion desktops is calculated by numbers made public by <a hreflang="en" href="https://web.archive.org/web/20181030132235/https://news.microsoft.com/bythenumbers/en/windowsdevices">Microsoft</a> and <a hreflang="en" href="https://web.archive.org/web/20190628161024/https://appleinsider.com/articles/18/10/30/apple-passes-100m-active-mac-milestone-thanks-to-high-numbers-of-new-users">Apple</a>. It does not include linux PC users.
-</p>
+</aside>

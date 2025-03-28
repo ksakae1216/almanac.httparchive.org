@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Media
 description: Mediahoofdstuk van de Web Almanac 2020 met betrekking tot bestandsgroottes en -indelingen van afbeeldingen, responsieve afbeeldingen, cliënthints, lazy loading, toegankelijkheid en video.
+hero_alt: Hero image of Web Almanac characters projecting an image onto a screen while other Web Almanac characters walk to cinema seats with popcorn to watch the projection.
 authors: [tpiros, bseymour, eeeps]
 reviewers: [nhoizey, colinbendell, dougsillars, Navaneeth-akam]
 analysts: [smatei]
@@ -185,7 +186,7 @@ Van de pagina's die `<picture>` gebruiken om van formaat te wisselen, biedt onge
 
 We zien dat WebP het dominante gebruik is van `<source>`-elementen, gevolgd door PNG, en dat en JPG slechts 4,83% van `<picture>`-gebruik is.
 
-<p class="note">Merk op dat onze crawler crawlt als Chrome die WebP ondersteunt, maar als u een andere browser gebruikt die dit niet ondersteunt, ziet u andere resultaten.</p>
+<aside class="note">Merk op dat onze crawler crawlt als Chrome die WebP ondersteunt, maar als u een andere browser gebruikt die dit niet ondersteunt, ziet u andere resultaten.</aside>
 
 Hier is een voorbeeld van de markup-syntaxis die kan worden gebruikt om meerdere indelingsvarianten aan te bieden:
 
@@ -222,7 +223,7 @@ Er zijn drie aspecten waarmee u rekening moet houden bij het implementeren van f
 
 Verschillende Dynamic Media Services en Image CDN's kunnen dit aanzienlijk vereenvoudigen door het te automatiseren en te trachten het steeds veranderende ondersteuningslandschap van browserformaten te volgen en er mee te synchroniseren.
 
-<p class="note">Let op: hoewel AVIF wordt ondersteund in Chrome sinds versie 85 (uitgebracht eind augustus 2020), zijn de gegevens voor deze Almanac voornamelijk van vóór deze tijd. Als u echter een ad-hoczoekopdracht uitvoert op recentere gegevens van begin november 2020, worden tienduizenden AVIF-verzoeken weergegeven.</p>
+<aside class="note">Let op: hoewel AVIF wordt ondersteund in Chrome sinds versie 85 (uitgebracht eind augustus 2020), zijn de gegevens voor deze Almanac voornamelijk van vóór deze tijd. Als u echter een ad-hoczoekopdracht uitvoert op recentere gegevens van begin november 2020, worden tienduizenden AVIF-verzoeken weergegeven.</aside>
 
 ##### Picture: media art direction
 

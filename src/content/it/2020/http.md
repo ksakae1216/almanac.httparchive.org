@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: HTTP/2
 description: Capitolo HTTP/2 del 2020 Web Almanac che copre l'adozione e l'impatto di HTTP/2, HTTP/2 Push, problemi HTTP/2 e HTTP/3.
+hero_alt: Hero image of Web Almanac characters driving vehicles in various lanes carrying script and images resources.
 authors: [dotjs, rmarx, MikeBishop]
 reviewers: [LPardue, tunetheweb, ibnesayeed]
 analysts: [gregorywolf]
@@ -97,9 +98,9 @@ Confrontando la Figura 22.3 con i risultati dello scorso anno, c'è stato un **a
   <figcaption>{{ figure_link(caption="Utilizzo della versione HTTP su richiesta.", sheets_gid="2122693316", sql_file="adoption_of_http_2_by_site_and_requests.sql") }}</figcaption>
 </figure>
 
-<p class="note">
+<aside class="note">
   ** Come per la scansione dello scorso anno, circa il 4% delle richieste desktop non riportava una versione del protocollo. L'analisi mostra che si tratta principalmente di HTTP/1.1 e abbiamo lavorato per correggere questa lacuna nelle nostre statistiche per future scansioni e analisi. Sebbene basiamo i dati sulla scansione di agosto 2020, abbiamo confermato la correzione nel set di dati di ottobre 2020 prima della pubblicazione che mostrava effettivamente che si trattava di richieste HTTP/1.1 e quindi le abbiamo aggiunte a quella statistica nella tabella sopra.
-</note>
+</aside>
 
 Quando si esamina il numero totale di richieste di siti web, ci sarà una preferenza per i comuni domini di terze parti. Per avere una migliore comprensione dell'adozione di HTTP/2 da parte dell'installazione del server, esamineremo invece il protocollo utilizzato per servire l'HTML dalla home page di un sito.
 
@@ -417,7 +418,7 @@ Questa <a hreflang="en" href="https://github.com/andydavies/http2-prioritization
   <figcaption>{{ figure_link(caption="Supporto per prioritizzazione HTTP/2 nei CDN comuni.", sheets_gid="1152953475", sql_file="percentage_of_h2_and_h3_sites_affected_by_cdn_prioritization.sql") }}</figcaption>
 </figure>
 
-Per chi non utilizza CDN, ci aspettiamo che il numero di server che applicano correttamente la priorità HTTP/2 sia notevolmente inferiore. Ad esempio, l'implementazione HTTP/2 di NodeJS [non supporta l'assegnazione di priorità](https://twitter.com/jasnell/status/1245410283582918657).
+Per chi non utilizza CDN, ci aspettiamo che il numero di server che applicano correttamente la priorità HTTP/2 sia notevolmente inferiore. Ad esempio, l'implementazione HTTP/2 di NodeJS [non supporta l'assegnazione di priorità](https://x.com/jasnell/status/1245410283582918657).
 
 ### Addio server push?
 

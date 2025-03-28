@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Media
 description: Media chapter of the 2020 Web Almanac covering image file sizes and formats, responsive images, client hints, lazy loading, accessibility and video.
+hero_alt: Hero image of Web Almanac characters projecting an image onto a screen while other Web Almanac characters walk to cinema seats with popcorn to watch the projection.
 authors: [tpiros, bseymour, eeeps]
 reviewers: [nhoizey, colinbendell, dougsillars, Navaneeth-akam]
 analysts: [smatei]
@@ -185,7 +186,7 @@ Of pages using `<picture>` for format-switching, around 68% are offering a singl
 
 We see that WebP is the dominant usage across `<source>` elements, followed by PNG, and that and JPG is only 4.83% of `<picture>` usage.
 
-<p class="note">Note our crawler crawls as Chrome which supports WebP, but if using another browser which does not support this then you will see different results.</p>
+<aside class="note">Note our crawler crawls as Chrome which supports WebP, but if using another browser which does not support this then you will see different results.</aside>
 
 Here is an example of the markup syntax that could be used to offer multiple format variants:
 
@@ -222,7 +223,7 @@ There are three aspects to consider when implementing format-switching:
 
 Several Dynamic Media Services and Image CDNs can greatly simplify this by automating it and endeavoring to track and keep in sync with the ever-changing browser format support landscape.
 
-<p class="note">Note: though AVIF has been supported in Chrome since version 85 (released late August 2020), the data for this Almanac is predominantly from prior to this time. However running an ad hoc query on more recent data from early November 2020 shows tens of thousands of AVIF requests.</p>
+<aside class="note">Note: though AVIF has been supported in Chrome since version 85 (released late August 2020), the data for this Almanac is predominantly from prior to this time. However running an ad hoc query on more recent data from early November 2020 shows tens of thousands of AVIF requests.</aside>
 
 ##### Picture: media art direction
 

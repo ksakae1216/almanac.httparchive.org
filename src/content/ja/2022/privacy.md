@@ -1,6 +1,7 @@
 ---
 title: プライバシー
 description: 2022年のWeb Almanacのプライバシー章は、オンライン追跡の採用と影響、プライバシー設定信号、およびよりプライバシーに配慮したウェブを目指すブラウザの取り組みについて取り上げています。
+hero_alt: Hero image of Web Almanac characters with cameras, phones, and microphones acting like paparazzi while another character pulls back a shower curtain to reveal a web page behind it.
 authors: [tomvangoethem, nrllh]
 reviewers: [iskander-sanchez-rola]
 analysts: [max-ostapenko, ydimova]
@@ -236,7 +237,7 @@ IPベースのジオロケーションサービスは、特にユーザーがVPN
   )
 }}
 
-デフォルトでは、サードパーティのスクリプトは、組み込まれているウェブサイトと同じブラウザ機能にアクセスできます。ウェブサイトが有効にする機能を制限するために、ウェブサイトは[パーミッションポリシー](https://developer.chrome.com/docs/privacy-security/permissions-policy?hl=ja)を利用できます。HTTPレスポンスヘッダーを通じて、ウェブサイトはどの機能を許可するかを示すことができます。例えば、`microphone`機能がこのリストに含まれていない場合、ウェブページに組み込まれているスクリプトはそれを使用することができません。このポリシーは比較的新しいものですが、デスクトップサイトの2.71％、モバイルサイトの2.31％で採用が見られます。
+デフォルトでは、サードパーティのスクリプトは、組み込まれているウェブサイトと同じブラウザ機能にアクセスできます。ウェブサイトが有効にする機能を制限するために、ウェブサイトは[パーミッションポリシー](https://developer.chrome.com/docs/privacy-securitypermissions-policy?hl=ja)を利用できます。HTTPレスポンスヘッダーを通じて、ウェブサイトはどの機能を許可するかを示すことができます。例えば、`microphone`機能がこのリストに含まれていない場合、ウェブページに組み込まれているスクリプトはそれを使用することができません。このポリシーは比較的新しいものですが、デスクトップサイトの2.71％、モバイルサイトの2.31％で採用が見られます。
 
 パーミッションポリシーは、[フィーチャーポリシー](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Permissions-Policy)を置き換えるもので、デスクトップサイトの0.69％、モバイルサイトの0.52％で依然として見られます。
 デフォルトでは、パーミッションポリシーによって規制されるほとんどの機能は、クロスオリジンのiframeで無効になっていますが、`allow`属性を通じて明示的に有効にすることができます。デスクトップサイトの15.18％、モバイルサイトの14.32％がこの機能を利用しています。iframe上の`allow`属性の使用に関する詳細な分析については、[セキュリティ](./security#パーミッションポリシー　)章を参照してください。

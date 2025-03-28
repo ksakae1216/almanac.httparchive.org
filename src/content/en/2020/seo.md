@@ -2,14 +2,15 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: SEO
 description: SEO chapter of the 2020 Web Almanac covering content, meta tags, indexability, linking, speed, structured data, internationalization, SPAs, AMP and security.
+hero_alt: Hero image of various web pages beneath a search field with Web Almanac characters shine a light on the pages and make various checks.
 authors: [aleyda, ipullrank, fellowhuman1101]
 reviewers: [natedame, catalinred, dsottimano, dwsmart, en3r0, ibnesayeed, tunetheweb]
 analysts: [Tiggerito, antoineeripret]
 editors: [rviscomi]
 translators: []
-aleyda_bio: SEO consultant, author, speaker and entrepreneur. Founder of <a hreflang="en" href="https://www.orainti.com/">Orainti</a> (a boutique SEO consultancy working with some of the top Web properties and brands, from SaaS to marketplaces) and co-founder of <a hreflang="en" href="https://remoters.net/">Remoters.net</a> (a free remote work hub, featuring remote jobs, tools, events, guides, and more to facilitate remote work). Aleyda enjoys sharing about SEO through her <a hreflang="en" href="https://www.aleydasolis.com/en/blog/">blog</a>, the <a hreflang="en" href="https://www.aleydasolis.com/en/seo-tips/">#SEOFOMO newsletter</a>, the <a hreflang="en" href="https://www.aleydasolis.com/en/crawling-mondays-videos/">Crawling Mondays</a> video and podcast series and over <a href="https://twitter.com/aleyda">Twitter</a>.
-ipullrank_bio: An artist and a technologist, all rolled into one, Michael King is the founder of enterprise digital marketing agency, <a hreflang="en" href="https://ipullrank.com">iPullRank</a> and founder of Natural Language Generation app <a hreflang="en" href="https://www.copyscience.io">CopyScience</a>. Effortlessly leaning on his background as an independent hip-hop musician, Mr. King is a compelling content creator and an award-winning dynamic speaker who is called upon to contribute to technology and marketing conferences and blogs all over the world. You can find Mike talking trash on <a href="https://twitter.com/ipullrank">Twitter</a>
-fellowhuman1101_bio: 100% human & totally not a robot, Jamie Indigo untangles technologies to help humans access useful information and businesses provide valuable digital experiences. She founded <a hreflang="en" href="https://not-a-robot.com">Not a Robot</a> to consult with a focus on the human aspects of technical SEO including ethics & inclusion in technology and the search industry.  She can be found learning in public on <a href="https://twitter.com/Jammer_Volts">Twitter</a>.
+aleyda_bio: SEO consultant, author, speaker and entrepreneur. Founder of <a hreflang="en" href="https://www.orainti.com/">Orainti</a> (a boutique SEO consultancy working with some of the top Web properties and brands, from SaaS to marketplaces) and co-founder of <a hreflang="en" href="https://remoters.net/">Remoters.net</a> (a free remote work hub, featuring remote jobs, tools, events, guides, and more to facilitate remote work). Aleyda enjoys sharing about SEO through her <a hreflang="en" href="https://www.aleydasolis.com/en/blog/">blog</a>, the <a hreflang="en" href="https://www.aleydasolis.com/en/seo-tips/">#SEOFOMO newsletter</a>, the <a hreflang="en" href="https://www.aleydasolis.com/en/crawling-mondays-videos/">Crawling Mondays</a> video and podcast series and over <a href="https://x.com/aleyda">Twitter</a>.
+ipullrank_bio: An artist and a technologist, all rolled into one, Michael King is the founder of enterprise digital marketing agency, <a hreflang="en" href="https://ipullrank.com">iPullRank</a> and founder of Natural Language Generation app <a hreflang="en" href="https://www.copyscience.io">CopyScience</a>. Effortlessly leaning on his background as an independent hip-hop musician, Mr. King is a compelling content creator and an award-winning dynamic speaker who is called upon to contribute to technology and marketing conferences and blogs all over the world. You can find Mike talking trash on <a href="https://x.com/ipullrank">Twitter</a>
+fellowhuman1101_bio: 100% human & totally not a robot, Jamie Indigo untangles technologies to help humans access useful information and businesses provide valuable digital experiences. She founded <a hreflang="en" href="https://not-a-robot.com">Not a Robot</a> to consult with a focus on the human aspects of technical SEO including ethics & inclusion in technology and the search industry.  She can be found learning in public on <a href="https://x.com/Jammer_Volts">Twitter</a>.
 discuss: 2043
 results: https://docs.google.com/spreadsheets/d/1ram47FshAjzvbQVJbAQPgxZN7PPOPCKIK67VJZCo92c/
 featured_quote: Despite the growing use of mobile devices and Google's move to a Mobile first index, non-trivial disparities were found across mobile versus desktop pages, like the one between mobile and desktop links.
@@ -424,9 +425,9 @@ The growth of these objects is a general indication of increased adoption of str
 * `HowTo` markup grew 605% on desktop and 623% on mobile.
 * `QAPage` markup grew 166.7% on desktop and 192.1% on mobile.
 
-<p class="note">
+<aside class="note">
   Again, it's important to note that this data might not be representative of their actual level of growth, since these objects are usually placed on internal pages.
-</p>
+</aside>
 
 The adoption of structured data is a boon for the web as extracting data is valuable to a wealth of use cases. We expect this to continue to grow as search engines expand their usage and as it begins to power applications beyond web search.
 

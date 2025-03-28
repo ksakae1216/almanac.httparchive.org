@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Privacy
 description: Privacy chapter of the 2021 Web Almanac covering adoption and impact of online tracking, privacy preference signals and browser initiatives for a privacy-friendlier web.
+hero_alt: Hero image of Web Almanac characters with cameras, phones, and microphones acting like paparazzi while another character pulls back a shower curtain to reveal a web page behind it.
 authors: [ydimova, victorlep]
 reviewers: [maudnals]
 analysts: [victorlep, max-ostapenko]
@@ -25,7 +26,7 @@ featured_stat_label_3: Popular sites opting out of FLoC cohorts
 
 A [whole industry](https://crackedlabs.org/en/corporate-surveillance/) is dedicated to tracking users online, to build detailed user profiles for purposes such as targeted advertising, fraud detection, price differentiation, or even credit scoring. Sharing geolocation data with websites can prove very useful in day-to-day life, but may also allow companies to <a hreflang="en" href="https://www.nytimes.com/interactive/2019/12/19/opinion/location-tracking-cell-phone.html">see your every movement</a>. Even if a service treats a user's private information diligently, the mere act of storing personal data provides hackers with an opportunity to <a hreflang="en" href="https://haveibeenpwned.com/">breach services and leak millions of personal records online</a>.
 
-Recent legislative efforts such as the <a hreflang="en" href="https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu">GDPR</a> in Europe, <a hreflang="en" href="https://www.oag.ca.gov/privacy/ccpa">CCPA</a> in California, <a hreflang="pt-br" href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd">LGPD</a> in Brazil, or the <a hreflang="en" href="https://www.meity.gov.in/data-protection-framework">PDP Bill</a> in India all strive to require companies to protect personal data and implement privacy by default, including online. Major technology companies such as Google, Facebook and Amazon have already received <a hreflang="en" href="https://en.wikipedia.org/wiki/GDPR_fines_and_notices">massive fines</a> for alleged violations of user privacy.
+Recent legislative efforts such as the <a hreflang="en" href="https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu">GDPR</a> in Europe, <a hreflang="en" href="https://www.oag.ca.gov/privacy/ccpa">CCPA</a> in California, <a hreflang="pt-br" href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd">LGPD</a> in Brazil, or the <a hreflang="en" href="https://www.meity.gov.in/data-protection-framework">PDP Bill</a> in India all strive to require companies to protect personal data and implement privacy by default, including online. Major technology companies such as Google, Facebook and Amazon have already received [massive fines](https://wikipedia.org/wiki/GDPR_fines_and_notices) for alleged violations of user privacy.
 
 These new laws have given users a much larger say in how comfortable they are with sharing personal data. You probably already have clicked through quite a few cookie consent banners that enable this choice. Furthermore, web browsers are implementing <a hreflang="en" href="https://privacysandbox.com/">technological solutions</a> to improve user privacy, from blocking third-party cookies over hiding sensitive data to innovative ways to balance legitimate use cases on personal attributes with individual user privacy.
 
@@ -271,7 +272,7 @@ Geolocation data can also be accessed by websites through a [web browser API](ht
 
 Poor security management within a company can have a significant impact on its customers' private data. <a hreflang="en" href="https://haveibeenpwned.com/">Have I Been Pwned</a> allows users to check whether their email address or phone number was leaked in a data breach. At the time of this writing, Have I Been Pwned has tracked 562 breaches, leaking 640 million records. In 2020 alone, 40 services were breached and personal data about millions of users leaked. Three of these breaches were marked as _sensitive_, referring to the possibility of a negative impact on the user if someone were to find that user's data in the breach. One example of a sensitive breach is "[Carding Mafia](https://www.vice.com/en/article/v7m9jx/credit-card-hacking-forum-gets-hacked-exposing-300000-hackers-accounts)", a platform where stolen credit cards are traded.
 
-<p class="note">Note that 40 breaches in the previous year is a lower bound, since many breaches are only discovered, or made public, several months after they have occurred.</p>
+<aside class="note">Note that 40 breaches in the previous year is a lower bound, since many breaches are only discovered, or made public, several months after they have occurred.</aside>
 
 {{ figure_markup(
   image="data_breaches_pwned_accounts_per_class.png",
@@ -360,7 +361,7 @@ The most common Referrer Policy that is explicitly set is `no-referrer-when-down
 
 In addition, around 0.5% of websites set the value of the referrer policy to `unsafe-url`, which allows the origin, host and query string to be sent with _any_ request, regardless of the security level of the receiver. In this case, a referrer could be sent in the clear, potentially leaking private information. Worryingly, sites are actively being configured to enable this behavior.
 
-<p class="note">Note: Websites may also send the referrer information as a URL parameter to the destination site. We did not measure usage of that mechanism for this report.</p>
+<aside class="note">Note: Websites may also send the referrer information as a URL parameter to the destination site. We did not measure usage of that mechanism for this report.</aside>
 
 ### User-Agent Client Hints
 
@@ -506,9 +507,9 @@ Beyond blocking trackers, Chrome has launched the <a hreflang="en" href="https:/
 
 ### Privacy Sandbox
 
-To seek ecosystem feedback, early and experimental versions of Privacy Sandbox APIs are made available initially behind <a hreflang="en" href="https://www.chromium.org/developers/how-tos/run-chromium-with-flags">feature flags</a> for testing by individual developers, and then in Chrome via <a hreflang="en" href="https://developer.chrome.com/blog/origin-trials/">_origin trials_</a>. Sites can take part in these origin trials to test experimental web platform features, and give feedback to the web standards community on a feature's usability, practicality, and effectiveness, before it's made available to all websites by default.
+To seek ecosystem feedback, early and experimental versions of Privacy Sandbox APIs are made available initially behind <a hreflang="en" href="https://www.chromium.org/developers/how-tos/run-chromium-with-flags">feature flags</a> for testing by individual developers, and then in Chrome via <a hreflang="en" href="https://developer.chrome.com/blog/origin-trials">_origin trials_</a>. Sites can take part in these origin trials to test experimental web platform features, and give feedback to the web standards community on a feature's usability, practicality, and effectiveness, before it's made available to all websites by default.
 
-<p class="note">**Disclaimer:** Origin trials are only available for a limited amount of time. The numbers below represent the state or Privacy Sandbox origin trials at the time of this writing, in October 2021.</p>
+<aside class="note">**Disclaimer:** Origin trials are only available for a limited amount of time. The numbers below represent the state or Privacy Sandbox origin trials at the time of this writing, in October 2021.</aside>
 
 ### FLoC
 
@@ -540,11 +541,11 @@ We saw that 4.10% of the top 1,000 websites have opted out of FLoC. Across all w
 
 Within Google's Privacy Sandbox initiative, a number of experiments are in various stages of development.
 
-The <a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/attribution-reporting/">_Attribution Reporting API_</a> (previously called _Conversion Measurement_) makes it possible to measure when user interaction with an ad leads to a conversion—for example, when an ad click eventually led to a purchase. We saw the first origin trial (which ended in October 2021) enabled on 10 origins.
+The <a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/attribution-reporting">_Attribution Reporting API_</a> (previously called _Conversion Measurement_) makes it possible to measure when user interaction with an ad leads to a conversion—for example, when an ad click eventually led to a purchase. We saw the first origin trial (which ended in October 2021) enabled on 10 origins.
 
-<a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/fledge/">_FLEDGE_</a> (First "Locally-Executed Decision over Groups" Experiment) seeks to address ad targeting. The API can be tested in current versions of Chrome <a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/fledge/">locally by individual developers</a> but there is no origin trial as of October 2021.
+<a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/fledge">_FLEDGE_</a> (First "Locally-Executed Decision over Groups" Experiment) seeks to address ad targeting. The API can be tested in current versions of Chrome <a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/fledge">locally by individual developers</a> but there is no origin trial as of October 2021.
 
-<a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/trust-tokens/">_Trust Tokens_</a> enable a website to convey a limited amount of information from one browsing context to another to help combat fraud, without passive tracking. We saw the first <a hreflang="en" href="https://developer.chrome.com/blog/third-party-origin-trials/">origin trial</a> (which will end in May 2022) enabled on 7 origins that are likely embedded in a number of sites as third-party providers.
+<a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/trust-tokens">_Trust Tokens_</a> enable a website to convey a limited amount of information from one browsing context to another to help combat fraud, without passive tracking. We saw the first <a hreflang="en" href="https://developer.chrome.com/blog/third-party-origin-trials">origin trial</a> (which will end in May 2022) enabled on 7 origins that are likely embedded in a number of sites as third-party providers.
 
 <a hreflang="en" href="https://github.com/WICG/CHIPS">_CHIPS_</a> (Cookies Having Independent Partitioned State) allows websites to mark cross-site cookies as "Partitioned", putting them in a separate cookie jar per top-level site. (Firefox has already introduced the similar <a hreflang="en" href="https://blog.mozilla.org/security/2021/02/23/total-cookie-protection/">_Total Cookie Protection_</a> feature for cookie partitioning.) As of October 2021, there is no origin trial for CHIPS.
 
@@ -560,7 +561,7 @@ The <a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/att
   )
 }}
 
-Finally, <a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/first-party-sets/">_First-Party Sets_</a> allow website owners to define a set of distinct domains that actually belong to the same entity. Owners can then set a `SameParty` attribute on cookies that should be sent across cross-site contexts, as long as the sites are in the same first-party set. A first origin trial ended in September 2021. We saw the `SameParty` attribute on a few thousand cookies.
+Finally, <a hreflang="en" href="https://developer.chrome.com/docs/privacy-sandbox/first-party-sets">_First-Party Sets_</a> allow website owners to define a set of distinct domains that actually belong to the same entity. Owners can then set a `SameParty` attribute on cookies that should be sent across cross-site contexts, as long as the sites are in the same first-party set. A first origin trial ended in September 2021. We saw the `SameParty` attribute on a few thousand cookies.
 
 ## Conclusion
 

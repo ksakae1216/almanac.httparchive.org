@@ -2,12 +2,13 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Jamstack
 description: 2021年版Web AlmanacのJamstackの章では、技術の採用状況、Jamstackで構築されたWebサイトのパフォーマンス、各種リソースの重み付けなどを取り上げています。
+hero_alt: Hero image of the Web Almanac characters using a large gas cylinder with script markings on the front to inflate a web page.
 authors: [denar90]
 reviewers: [Dawntraoz, thomkrupa, tunetheweb]
 analysts: [denar90, tunetheweb, rviscomi]
 editors: [tunetheweb, shantsis]
 translators: [ksakae1216]
-denar90_bio: Artem Denysov は、ソフトウェアエンジニア、オープンソースの貢献者、Mozillians のメンバー、講演者、そして執筆者です。Webperfとツールで、開発者とユーザーの生活をより快適にします。[Stackbit](https://stackbit.com) で、開発者が Jamstack ウェブサイトを簡単に構築できるようにするために働いています。[Twitter](https://twitter.com/denar90_) と <a hreflang="en" href="https://www.linkedin.com/in/denar90/">Linkedin</a> でご覧いただけます。
+denar90_bio: Artem Denysov は、ソフトウェアエンジニア、オープンソースの貢献者、Mozillians のメンバー、講演者、そして執筆者です。Webperfとツールで、開発者とユーザーの生活をより快適にします。[Stackbit](https://stackbit.com) で、開発者が Jamstack ウェブサイトを簡単に構築できるようにするために働いています。[Twitter](https://x.com/denar90_) と <a hreflang="en" href="https://www.linkedin.com/in/denar90/">Linkedin</a> でご覧いただけます。
 results: https://docs.google.com/spreadsheets/d/1anlgeaBH2Yui2kFWuRGxHU2QdMiCKOgDrn4WyXkt5ro/
 featured_quote: Jamstackは、モダンなWebサイトを構築するための、若く、急成長しているテクノロジーです。これは、人々が言うことであり、数字で証明されています。
 featured_stat_1: 1.1%
@@ -83,7 +84,7 @@ SSGの採用は、一般的に前年比2倍で伸びています。2019年はモ
 
 まずは、もっとも普及しているSSGを把握することからはじめましょう。Next.jsはJamstackサイトの43.6%をカバーしています。2位はNuxt.jsで31.1％、3位はGatsbyで16.0％、4位はHugoで6.0％となっています。
 
-<p class="note">なお、本章の初出時においては、NuxtとNextのサイト数が誤って多く計上されていたため、数値が異なっています。本章の他の数値も含め、上記の数値は修正されています。</p>
+<aside class="note">なお、本章の初出時においては、NuxtとNextのサイト数が誤って多く計上されていたため、数値が異なっています。本章の他の数値も含め、上記の数値は修正されています。</aside>
 
 上位3つのSSGは、すべてJavaScriptベースです。Next.jsとGatsbyは、<a hreflang="en" href="https://reactjs.org/">React.js</a>をコアとして、その上に独自の機能を追加することで補完しています。Nuxt.jsは、<a hreflang="en" href="https://vuejs.org">Vue.js</a>をベースにしています。これらの人気のあるフロントエンドフレームワークは、巨大なエコシステムを備えているため、開発が非常に容易になります。<a hreflang="en" href="https://nodejs.org/en/">Node.js</a> は、従来使われているブラウザだけでなく、サーバ上でもJavaScriptを実行できるようにし、開発者が1つの言語に固執することを可能にしています。そのため、<a hreflang="en" href="https://go.dev/">プログラミング言語Go</a>をベースにしたHugoや、<a hreflang="en" href="https://go.dev/">Ruby</a>ベースのJekyllと比べて、サーバの観点からもこれらのSSGの採用が容易になるのだそうです。
 

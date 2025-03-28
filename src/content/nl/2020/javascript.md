@@ -2,12 +2,13 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: JavaScript
 description: JavaScript-hoofdstuk van de Web Almanac 2020 waarin wordt beschreven hoeveel JavaScript we gebruiken op het web, compressie, bibliotheken en frameworks, laden en bronkaarten.
+hero_alt: Hero image of the Web Almanac characters cycling to power a website.
 authors: [tkadlec]
 reviewers: [ibnesayeed, denar90]
 analysts: [rviscomi, paulcalvano]
 editors: [rviscomi]
 translators: [noah-vdv]
-tkadlec_bio: Tim is een webprestatieadviseur en trainer gericht op het bouwen van een web dat iedereen kan gebruiken. Hij is de auteur van High Performance Images (O'Reilly, 2016) en Implementing Responsive Design (New Riders, 2012). Hij schrijft over alles wat met internet te maken heeft op <a hreflang="en" href="https://timkadlec.com/">timkadlec.com</a>. U kunt hem vinden op Twitter <a href="https://twitter.com/tkadlec">@tkadlec</a> waar hij zijn gedachten in een beknopter formaat deelt.
+tkadlec_bio: Tim is een webprestatieadviseur en trainer gericht op het bouwen van een web dat iedereen kan gebruiken. Hij is de auteur van High Performance Images (O'Reilly, 2016) en Implementing Responsive Design (New Riders, 2012). Hij schrijft over alles wat met internet te maken heeft op <a hreflang="en" href="https://timkadlec.com/">timkadlec.com</a>. U kunt hem vinden op Twitter <a href="https://x.com/tkadlec">@tkadlec</a> waar hij zijn gedachten in een beknopter formaat deelt.
 discuss: 2038
 results: https://docs.google.com/spreadsheets/d/1cgXJrFH02SHPKDGD0AelaXAdB3UI7PIb5dlS0dxVtfY/
 featured_quote: JavaScript heeft een lange weg afgelegd sinds zijn bescheiden oorsprong als de laatste van de drie web-hoekstenen, naast CSS en HTML. Tegenwoordig begint JavaScript een breed spectrum van de technische stack te infiltreren. Het is niet langer beperkt tot de cliëntzijde en het wordt een steeds populairdere keuze voor build-tools en server-side scripting. JavaScript sluipt ook zijn weg naar de CDN-laag dankzij edge computing-oplossingen.
@@ -199,9 +200,9 @@ We kunnen beginnen met het compenseren van een deel van de kosten van het laden 
 
 Op mobiele apparaten omvatten externe scripts 59,0% van alle gevonden scriptelementen.
 
-<p class="note">
+<aside class="note">
   Even terzijde: toen we het hadden over hoeveel JavaScript eerder op een pagina is geladen, hield dat totaal geen rekening met de grootte van deze inline scripts - omdat ze deel uitmaken van het HTML-document, worden ze meegeteld bij de opmaak-grootte . Dit betekent dat we nog meer script laden dat de cijfers laten zien.
-</p>
+</aside>
 
 {{ figure_markup(
   image="external-inline-mobile.png",
@@ -231,7 +232,7 @@ Tegenwoordig is het patroon voor de overgrote meerderheid van de sites niet nodi
 
 There is an encouraging story here, though.
 
-Harry Roberts [tweette over het antipatroon op Twitter](https://twitter.com/csswizardry/status/1331721659498319873), wat ons ertoe aanzette om te kijken hoe vaak dit in het wild voorkwam. [Rick Viscomi controleerde wie de grootste boosdoeners waren](https://twitter.com/rick_viscomi/status/1331735748060524551), en het blijkt dat "stats.wp.com" de bron was van de meest voorkomende overtreders. @Kraft van Automattic antwoordde, en het patroon wordt nu [in de toekomst verwijderd](https://twitter.com/Kraft/status/1336772912414601224).
+Harry Roberts [tweette over het antipatroon op Twitter](https://x.com/csswizardry/status/1331721659498319873), wat ons ertoe aanzette om te kijken hoe vaak dit in het wild voorkwam. [Rick Viscomi controleerde wie de grootste boosdoeners waren](https://x.com/rick_viscomi/status/1331735748060524551), en het blijkt dat "stats.wp.com" de bron was van de meest voorkomende overtreders. @Kraft van Automattic antwoordde, en het patroon wordt nu [in de toekomst verwijderd](https://x.com/Kraft/status/1336772912414601224).
 
 Een van de geweldige dingen aan de openheid van het web is hoe één observatie kan leiden tot betekenisvolle verandering en dat is precies wat hier gebeurde.
 

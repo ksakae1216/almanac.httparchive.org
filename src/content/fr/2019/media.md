@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Media
 description: Chapitre Média du Web Almanac 2019 couvrant les tailles et formats des fichiers d’images, les images adaptatives, les Indications Client, le lazy loading, l’accessibilité et la vidéo.
+hero_alt: Hero image of Web Almanac characters projecting an image onto a screen while other Web Almanac characters walk to cinema seats with popcorn to watch the projection.
 authors: [colinbendell, dougsillars]
 reviewers: [ahmadawais, eeeps]
 analysts: [dougsillars, rviscomi]
@@ -9,8 +10,8 @@ editors: [tunetheweb]
 translators: [borisschapira]
 discuss: 1759
 results: https://docs.google.com/spreadsheets/d/1hj9bY6JJZfV9yrXHsoCRYuG8t8bR-CHuuD98zXV7BBQ/
-colinbendell_bio: Colin fait partie du <i lang="en">CTO Office</i> de <a hreflang="en" href="https://cloudinary.com/">Cloudinary</a> et est co-auteur du livre O’Reilly <a hreflang="en" lang="en" href="https://www.oreilly.com/library/view/high-performance-images/9781491925799/">High Performance Images</a>. Il passe une grande partie de son temps à l’intersection des données à haut volume, des médias, des navigateurs et des standards. Vous le trouverez twittant en tant que <a href="https://twitter.com/colinbendell">@colinbendell</a> et sur son blog <a hreflang="en" href="https://bendell.ca/">https://bendell.ca</a>.
-dougsillars_bio: Doug Sillars est un nomade numérique indépendant qui travaille à l’intersection de la performance et des médias. Il tweete sous <a href="https://twitter.com/dougsillars">@dougsillars</a>, et blogue régulièrement sur <a hreflang="en" href="https://dougsillars.com">dougsillars.com</a>.
+colinbendell_bio: Colin fait partie du <i lang="en">CTO Office</i> de <a hreflang="en" href="https://cloudinary.com/">Cloudinary</a> et est co-auteur du livre O’Reilly <a hreflang="en" lang="en" href="https://www.oreilly.com/library/view/high-performance-images/9781491925799/">High Performance Images</a>. Il passe une grande partie de son temps à l’intersection des données à haut volume, des médias, des navigateurs et des standards. Vous le trouverez twittant en tant que <a href="https://x.com/colinbendell">@colinbendell</a> et sur son blog <a hreflang="en" href="https://bendell.ca/">https://bendell.ca</a>.
+dougsillars_bio: Doug Sillars est un nomade numérique indépendant qui travaille à l’intersection de la performance et des médias. Il tweete sous <a href="https://x.com/dougsillars">@dougsillars</a>, et blogue régulièrement sur <a hreflang="en" href="https://dougsillars.com">dougsillars.com</a>.
 featured_quote: Les images, les animations et les vidéos constituent une partie significative de l’expérience Web. Elles sont importantes pour de nombreuses raisons&nbsp;&colon; elles aident à raconter des histoires, à faire participer le public et à fournir une expression artistique d’une manière qui, souvent, ne peut pas être facilement produite avec d’autres technologies du web. L’importance de ces ressources médias peut être démontrée de deux façons&nbsp;&colon; par le volume d’octets téléchargés pour une page, mais aussi par la quantité de pixels utilisés pour afficher ces médias.
 featured_stat_1: 1 Mo
 featured_stat_label_1: taille médiane d’une page d’accueil
@@ -37,7 +38,7 @@ Bien que les médias soient essentiels pour l’expérience visuelle, l’impact
 
 Tout d’abord, la surcharge du réseau nécessaire pour télécharger ces octets peut être importante. Dans les environnements où le réseau est cellulaire ou lent (comme dans les cafés ou en cas de <i lang="en">tethering</i> dans un Uber), cela peut ralentir considérablement la [performance de la page](./performance). Les images sont une requête de moindre priorité du navigateur, mais elles peuvent facilement bloquer le téléchargement des CSS et des scripts JavaScript, amenant à retarder le rendu de la page. Cependant, à d’autres moments, le contenu de l’image est le signal visuel qui indique à l’utilisateur que la page est prête. Quand les transferts de contenu visuel sont lents, ils peuvent ainsi donner la perception d’une page web lente.
 
-Le deuxième impact est le coût financier pour l’utilisateur. C’est un aspect souvent ignoré, car il ne constitue pas une charge pour le propriétaire du site web mais pour l’utilisateur final. Il a été rapporté que certains marchés, [comme le Japon](https://twitter.com/yoavweiss/status/1195036487538003968?s=20), enregistrent une baisse des achats des étudiants vers la fin du mois, lorsque les limites de données sont atteintes, et que les utilisateurs ne peuvent pas voir le contenu visuel.
+Le deuxième impact est le coût financier pour l’utilisateur. C’est un aspect souvent ignoré, car il ne constitue pas une charge pour le propriétaire du site web mais pour l’utilisateur final. Il a été rapporté que certains marchés, [comme le Japon](https://x.com/yoavweiss/status/1195036487538003968?s=20), enregistrent une baisse des achats des étudiants vers la fin du mois, lorsque les limites de données sont atteintes, et que les utilisateurs ne peuvent pas voir le contenu visuel.
 
 En outre, le coût financier de la visite de ces sites web dans différentes parties du monde est disproportionné. Au niveau de la médiane et du 90e percentile, le volume des octets d’images est respectivement de 1&nbsp;Mo et de 1,9&nbsp;Mo. En utilisant <a hreflang="en" href="https://whatdoesmysitecost.com/#gniCost">WhatDoesMySiteCost.com</a> et en regardant le revenu national brut (RNB) par habitant, on peut voir qu’à Madagascar, le chargement d’une seule page web au 90e percentile coûterait à un utilisateur 2,6&nbsp;% du revenu brut quotidien. En revanche, en Allemagne, ce coût serait de 0,3&nbsp;% du revenu brut quotidien.
 
@@ -85,7 +86,7 @@ Pour le terminal mobile utilisé pour le parcours des pages web, nous avons un a
 
 Si nous avions une image qui remplissait parfaitement tout l’écran, le taux de remplissage serait de 1x le taux de pixel. Bien sûr, il est rare qu’un site web remplisse toute la surface de la page avec une seule image. Le contenu des médias a tendance à se mélanger avec le design et d’autres contenus. Une valeur supérieure à 1x implique que la mise en page oblige l’utilisateur à faire défiler l’image pour voir le contenu supplémentaire.
 
-<p class="note">Remarque&nbsp;: ceci ne concerne que la mise en page CSS, à la fois pour le ratio de pixels et le volume du contenu de la mise en page. Il ne s’agit pas d’évaluer la pertinence des images adaptatives ou la pertinence de fournir des contenus à haute densité de pixels.</p>
+<aside class="note">Remarque&nbsp;: ceci ne concerne que la mise en page CSS, à la fois pour le ratio de pixels et le volume du contenu de la mise en page. Il ne s’agit pas d’évaluer la pertinence des images adaptatives ou la pertinence de fournir des contenus à haute densité de pixels.</aside>
 
 {{ figure_markup(
   image="fig5_image_pixel_volume_v_css_pixels.png",
@@ -110,7 +111,7 @@ Si les stratégies utilisées pour les images, les vidéos et les animations son
 * **Lazy loading** - ne transférer les contenus que lorsqu’un être humain les verra
 * **Accessibilité** - garantir une expérience de qualité pour tous les êtres humains
 
-<p class="note">Un avertissement concernant l’interprétation de ces résultats. Les pages web explorées pour le Web Almanac ont été explorées sur un navigateur Chrome. Cela implique que toute négociation de contenu qui pourrait mieux s’appliquer à Safari ou Firefox pourrait ne pas être représentée dans cet ensemble de données. Par exemple, l’utilisation de formats de fichiers comme JPEG2000, JPEG-XR, HEVC et HEIC est absente car ceux-ci ne sont pas pris en charge par Chrome. Cela ne signifie pas que le web ne contient pas ces autres formats ou expériences. De même, Chrome supporte en natif le <i lang="en">lazy loading</i> (depuis la version 76), ce qui n’est pas encore disponible dans les autres navigateurs. Pour en savoir plus sur ces réserves, consultez notre <a href="./methodology">Méthodologie</a>.</p>
+<aside class="note">Un avertissement concernant l’interprétation de ces résultats. Les pages web explorées pour le Web Almanac ont été explorées sur un navigateur Chrome. Cela implique que toute négociation de contenu qui pourrait mieux s’appliquer à Safari ou Firefox pourrait ne pas être représentée dans cet ensemble de données. Par exemple, l’utilisation de formats de fichiers comme JPEG2000, JPEG-XR, HEVC et HEIC est absente car ceux-ci ne sont pas pris en charge par Chrome. Cela ne signifie pas que le web ne contient pas ces autres formats ou expériences. De même, Chrome supporte en natif le <i lang="en">lazy loading</i> (depuis la version 76), ce qui n’est pas encore disponible dans les autres navigateurs. Pour en savoir plus sur ces réserves, consultez notre <a href="./methodology">Méthodologie</a>.</aside>
 
 Il est rare de trouver une page web qui n’utilise pas d’images. Au fil des ans, de nombreux formats de fichiers différents sont apparus pour aider à présenter le contenu sur le web, chacun répondant à un problème différent. Il existe principalement 4 principaux formats d’images universels&nbsp;: JPEG, PNG, GIF et SVG. En outre, Chrome a enrichi le catalogue de médias et a ajouté la prise en charge d’un cinquième format d’image&nbsp;: WebP. D’autres navigateurs ont également ajouté la prise en charge des formats JPEG2000 (Safari), JPEG-XL (IE et Edge) et HEIC (WebView uniquement dans Safari).
 
@@ -321,7 +322,7 @@ L’utilité de `srcset` dépend généralement de la précision de la requête 
 
 {{ figure_markup(
   image="fig16_top_patterns_of_img_sizes.png",
-  caption="Principaux modèles de conception de <code><img sizes></code>.",
+  caption="Principaux modèles de conception de `<img sizes>`.",
   description="Diagramme à barres montrant que 11,3 millions d’images utilisent 'img sizes=`(max-width: 300px) 100vw, 300px`', 1,60 million utilisent 'auto', 1,00 million utilisent 'img sizes=`(max-width : 767px) 89vw...etc.`', 0,23 million utilisent '100vw' et 0,13 million utilisent '300px'.",
   chart_url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSViHIntdF6-bHAI0cl1HelY_X8rR4lf0P3W2Y8I5SyVMxG-ptggTHfWA0qrrU47RvuAydLE6Zex6L3/pubchart?oid=663985412&format=interactive"
   )

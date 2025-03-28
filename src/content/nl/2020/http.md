@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: HTTP/2
 description: HTTP/2-hoofdstuk van de Web Almanac 2020, dat de acceptatie en impact van HTTP/2, HTTP/2 Push, HTTP/2 Issues en HTTP/3 behandelt.
+hero_alt: Hero image of Web Almanac characters driving vehicles in various lanes carrying script and images resources.
 authors: [dotjs, rmarx, MikeBishop]
 reviewers: [LPardue, tunetheweb, ibnesayeed]
 analysts: [gregorywolf]
@@ -97,9 +98,9 @@ Wanneer Figuur 22.3 wordt vergeleken met de resultaten van vorig jaar, is er een
   <figcaption>{{ figure_link(caption="Gebruik van HTTP-versie op verzoek.", sheets_gid="2122693316", sql_file="adoption_of_http_2_by_site_and_requests.sql") }}</figcaption>
 </figure>
 
-<p class="note">
+<aside class="note">
   ** Net als bij de crawl van vorig jaar, meldde ongeveer 4% van de desktopverzoeken geen protocolversie. Analyse toont aan dat dit meestal HTTP/1.1 is en we hebben eraan gewerkt om dit gat in onze statistieken voor toekomstige crawls en analyses te dichten. Hoewel we de gegevens baseren op de crawl van augustus 2020, hebben we de correctie in de gegevensset van oktober 2020 vóór publicatie bevestigd, die inderdaad aantoonde dat dit HTTP/1.1-verzoeken waren en hebben ze daarom aan die statistiek in de bovenstaande tabel toegevoegd.
-</note>
+</aside>
 
 Bij het beoordelen van het totale aantal websiteverzoeken, zal er een voorkeur zijn voor algemene domeinen van derden. Om een beter begrip te krijgen van de HTTP/2-acceptatie door serverinstallatie, zullen we in plaats daarvan kijken naar het protocol dat wordt gebruikt om de HTML aan te bieden vanaf de startpagina van een site.
 
@@ -417,7 +418,7 @@ Deze <a hreflang="en" href="https://github.com/andydavies/http2-prioritization-i
   <figcaption>{{ figure_link(caption="Ondersteuning voor HTTP/2-prioriteitstelling in veelgebruikte CDN's.", sheets_gid="1152953475", sql_file="percentage_of_h2_and_h3_sites_affected_by_cdn_prioritization.sql") }}</figcaption>
 </figure>
 
-Voor niet-CDN-gebruik verwachten we dat het aantal servers dat correct HTTP/2-prioriteitstelling toepast aanzienlijk kleiner zal zijn. De HTTP/2-implementatie van NodeJS [ondersteunt bijvoorbeeld geen prioritering](https://twitter.com/jasnell/status/1245410283582918657).
+Voor niet-CDN-gebruik verwachten we dat het aantal servers dat correct HTTP/2-prioriteitstelling toepast aanzienlijk kleiner zal zijn. De HTTP/2-implementatie van NodeJS [ondersteunt bijvoorbeeld geen prioritering](https://x.com/jasnell/status/1245410283582918657).
 
 ### Vaarwel server push?
 

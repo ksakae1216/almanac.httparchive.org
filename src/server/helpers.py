@@ -15,11 +15,26 @@ import datetime
 import logging
 
 
+# This gets the previous year as can no longer assume it's this year -1 as
+# skip some years (e.g. 2024)
+def get_previous_year(year):
+    if year in SUPPORTED_YEARS:
+        year_index = SUPPORTED_YEARS.index(year)
+        if year_index > 0:
+            return SUPPORTED_YEARS[year_index - 1]
+        else:
+            return None  # No previous year if it's the first one
+    else:
+        return None  # Return None if the year is not in the list
+
+
 def render_template(template, *args, **kwargs):
     # If the year has already been set (e.g. for error pages) then use that
     # Otherwise the requested year, otherwise the default year
     year = kwargs.get("year", request.view_args.get("year", DEFAULT_YEAR))
+    previous_year = get_previous_year(year)
     config = kwargs.get("config", get_config(year))
+    slug = kwargs.get("slug", "")
 
     # If the lang has already been set (e.g. for error pages) then use that
     # Otherwise the requested lang, otherwise the default lang
@@ -79,6 +94,7 @@ def render_template(template, *args, **kwargs):
 
     kwargs.update(
         year=year,
+        previous_year=previous_year,
         lang=lang,
         language=language,
         supported_languages=template_supported_languages,
@@ -93,6 +109,7 @@ def render_template(template, *args, **kwargs):
         plural_ru=plural_ru,
         DEFAULT_YEAR=DEFAULT_YEAR,
         en_supported_years=en_supported_years,
+        slug=slug
     )
     return flask_render_template(template, *args, **kwargs)
 
@@ -291,7 +308,7 @@ def accentless_sort(value):
 def get_file_date_info(file, type):
     timestamps_config = get_timestamps_config()
     # Default Published and Last Updated to today
-    today = datetime.datetime.utcnow().isoformat(timespec='milliseconds')
+    today = datetime.datetime.now(datetime.UTC).isoformat(timespec='milliseconds')
     if type == "date_published" or type == "date_modified":
         return timestamps_config.get(file, {}).get(type, today)
     else:

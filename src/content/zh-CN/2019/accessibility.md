@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: 无障碍可访问性
 description: 2019 Web Almanac 网络年鉴的无障碍易访问性章节，涵盖易阅读、媒体、易于导航和与辅助技术的兼容性。
+hero_alt: Hero image of a robot with a blue, human accessibility icon on its front scanning a web page, while Web Almanac characters check some labels.
 authors: [nektarios-paisios, foxdavidj, kleinab]
 reviewers: [ljme]
 analysts: [dougsillars, rviscomi, foxdavidj]
@@ -56,7 +57,7 @@ featured_stat_label_3: 使用跳过链接的网站
 
 只有22.04%的网站给所有的文本提供了足够的颜色对比。或换句话说：每5个网站中就有4个网站的文字很容易和背景融合，导致难以阅读。
 
-<p class="note">请注意，我们无法分析图像中的任何文本，因此我们报告的指标是通过颜色对比测试的网站总数的上限。</p>
+<aside class="note">请注意，我们无法分析图像中的任何文本，因此我们报告的指标是通过颜色对比测试的网站总数的上限。</aside>
 
 ### 缩放页面
 

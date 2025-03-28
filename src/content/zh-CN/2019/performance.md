@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: 性能
 description: 2019 Web Almanac网络年鉴的性能章节，包括 首次有内容的绘制 (FCP), 首包字节 (TTFB), 以及首次输入延迟 (FID)。
+hero_alt: Hero image of Web Almanac characters images to a web page, while another Web Almanac character times them with a stopwatch.
 authors: [rviscomi]
 reviewers: [JMPerez,foxdavidj,sergeychernyshev,zeman]
 analysts: [rviscomi, raghuramakrishnan71]
@@ -9,7 +10,7 @@ editors: [rachellcostello]
 translators: [chengxicn]
 discuss: 1762
 results: https://docs.google.com/spreadsheets/d/1zWzFSQ_ygb-gGr1H1BsJCfB7Z89zSIf7GX0UayVEte4/
-rviscomi_bio: Rick Viscomi 是谷歌的高级开发者项目工程师，从事网络透明度的工作，例如 HTTP Archive 和 Chrome UX Report, 并研究网站建设和体验的交集。Rick 是 <a hreflang="en" href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBGvYSYO-VxOsaYQDw5rifJ">The State of the Web</a>的播主，专家们在其中讨论网络的发展趋势。 Rick 也是网站性能测试指南<a hreflang="en" href="https://usingwpt.com">Using WebPageTest</a>的合著者, 他也经常在 <a hreflang="en" href="https://dev.to/rick_viscomi">dev.to</a>发表关于Web的文章，他的推特是 <a href="https://twitter.com/rick_viscomi">@rick_viscomi</a>.
+rviscomi_bio: Rick Viscomi 是谷歌的高级开发者项目工程师，从事网络透明度的工作，例如 HTTP Archive 和 Chrome UX Report, 并研究网站建设和体验的交集。Rick 是 <a hreflang="en" href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBGvYSYO-VxOsaYQDw5rifJ">The State of the Web</a>的播主，专家们在其中讨论网络的发展趋势。 Rick 也是网站性能测试指南<a hreflang="en" href="https://usingwpt.com">Using WebPageTest</a>的合著者, 他也经常在 <a hreflang="en" href="https://dev.to/rick_viscomi">dev.to</a>发表关于Web的文章，他的推特是 <a href="https://x.com/rick_viscomi">@rick_viscomi</a>.
 featured_quote: 性能是用户体验的重要组成部分。对于许多网站来说，通过降低页面加载时间来改善用户体验与转化率的提高是一致的。相反，当性能不佳时，用户的转化率就不会像往常那样高，甚至还会在导致沮丧的页面观察到愤怒点击。
 featured_stat_1: 13%
 featured_stat_label_1: 有快速FCP的站点
@@ -59,7 +60,7 @@ featured_stat_label_3: 有快速FID的站点
 
 在上面的图7.1中，您可以看到FCP体验是如何在Web上分布的。这个图表从CrUX数据集里面的数百万个网站之中，将分布缩减到1,000个网站，其中每个垂直切片代表一个站点。该图表按快速FCP的百分比排序，快速FCP体验是1秒之内发生的。慢速的体验会在3秒或更长时间内发生，而中速的体验（以前称为“平均”）介于两者之间。在图表的极端情况下，有些网站拥有近100％的快速体验，而有些网站则具有近100％的慢速体验。在这两者之间，兼具快速，中速和慢速性能的网站似乎更倾向于快速或中速，而不是慢速，这很好。
 
-<p class="note">注意：当用户的性能下降时，很难说出原因是什么。网站本身可能设计得很差且效率低下。或可能存在其他环境因素，例如用户的连接速度慢，没有缓存等。因此，在查看该现场数据时，我们更倾向于说用户自身的体验缓慢，而不一定是网站。</p>
+<aside class="note">注意：当用户的性能下降时，很难说出原因是什么。网站本身可能设计得很差且效率低下。或可能存在其他环境因素，例如用户的连接速度慢，没有缓存等。因此，在查看该现场数据时，我们更倾向于说用户自身的体验缓慢，而不一定是网站。</aside>
 
 为了对网站是否足够**快速**进行分类，我们将使用新的<a hreflang="en" href="https://developers.google.com/speed/docs/insights/v5/about#categories">PageSpeed Insights</a> (PSI) 方法，其中至少有75％的网站FCP体验必须快于1秒。同样，一个足够**慢速**的网站具有25％或更多的FCP体验慢于3秒。我们说一个网站不符合以上两个条件时，它们的性能就是**中速**。
 

@@ -2,12 +2,13 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Jamstack
 description: Jamstack chapter of the 2021 Web Almanac covers adoption of technology, performance of websites built with Jamstack and weights for various resources.
+hero_alt: Hero image of the Web Almanac characters using a large gas cylinder with script markings on the front to inflate a web page.
 authors: [denar90]
 reviewers: [Dawntraoz, thomkrupa, tunetheweb]
 analysts: [denar90, tunetheweb, rviscomi]
 editors: [tunetheweb, shantsis]
 translators: []
-denar90_bio: Artem Denysov is Software Engineer, Open-Source contributor, proud Mozillians member, speaker, and writer. Makes developers and users live easier helping them with webperf & tools. Works at [Stackbit](https://stackbit.com) to empower developers build Jamstack websites easily. You can find him on [Twitter](https://twitter.com/denar90_) and <a hreflang="en" href="https://www.linkedin.com/in/denar90/">Linkedin</a>.
+denar90_bio: Artem Denysov is Software Engineer, Open-Source contributor, proud Mozillians member, speaker, and writer. Makes developers and users live easier helping them with webperf & tools. Works at [Stackbit](https://stackbit.com) to empower developers build Jamstack websites easily. You can find him on [Twitter](https://x.com/denar90_) and <a hreflang="en" href="https://www.linkedin.com/in/denar90/">Linkedin</a>.
 results: https://docs.google.com/spreadsheets/d/1anlgeaBH2Yui2kFWuRGxHU2QdMiCKOgDrn4WyXkt5ro/
 featured_quote: Jamstack young and fast growing technology to build modern websites. That what people say and that's proved by numbers.
 featured_stat_1: 1.1%
@@ -83,7 +84,7 @@ In 2020 the amount of desktop websites increased 2.76 times, while mobile just 1
 
 Let's begin with understanding which SSG is most popular. Next.js covers 43.6% of Jamstack sites. Nuxt.js is in second place with 31.1%, third is Gatsby with 16.0%, followed by Hugo at 6.0%.
 
-<p class="note">Please note the original publication of this chapter had different figures due to incorrect over-counting of Nuxt and Next sites. This has been corrected in above figures and, to a lesser degree, in other figures in this chapter.</p>
+<aside class="note">Please note the original publication of this chapter had different figures due to incorrect over-counting of Nuxt and Next sites. This has been corrected in above figures and, to a lesser degree, in other figures in this chapter.</aside>
 
 All top 3 SSGs are JavaScript based: Next.js and Gatsby use <a hreflang="en" href="https://reactjs.org/">React.js</a> at it's core and supplements this by adding their own functionality on top of it. Nuxt.js is based on <a hreflang="en" href="https://vuejs.org">Vue.js</a>. Having these popular front-end frameworks with huge ecosystems out of the box makes development way easier. <a hreflang="en" href="https://nodejs.org/en/">Node.js</a> allows JavaScript to run on the server as well as the browser where it has traditionally been used, enabling developers stick to one language. That makes adopting these SSGs easier from a server perspective, comparing to Hugo which is based on the <a hreflang="en" href="https://go.dev/">Go programming language</a>, and Jekyll based on <a hreflang="en" href="https://go.dev/">Ruby</a>.
 

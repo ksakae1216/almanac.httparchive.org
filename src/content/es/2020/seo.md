@@ -2,14 +2,15 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: SEO
 description: Capítulo sobre SEO del Web Almanac 2020 que cubre contenido, meta etiquetas, indexabilidad, enlazado, velocidad de carga, datos estructurados, internacionalización, SPAs, AMP y seguridad.
+hero_alt: Hero image of various web pages beneath a search field with Web Almanac characters shine a light on the pages and make various checks.
 authors: [aleyda, ipullrank, fellowhuman1101]
 reviewers: [natedame, catalinred, dsottimano, dwsmart, en3r0, ibnesayeed, tunetheweb]
 analysts: [Tiggerito, antoineeripret]
 editors: [rviscomi]
 translators: [carloscastromx]
-aleyda_bio: Consultora SEO, autora, conferenciante y emprendedora. Fundadora de <a hreflang="en" href="https://www.orainti.com/">Orainti</a> (una consultoría SEO boutique que trabaja con las mejores propiedades web y marcas, desde SaaS hasta marketplaces) y co-fundadora de <a hreflang="en" href="https://remoters.net/">Remoters.net</a> (un sitio web gratuito de recursos para trabajadores remotos, listando ofertas de trabajo remoto, herramientas, eventos, guías, y más para facilitar el trabajo remoto). Aleyda disfruta compartir sobre SEO a través de su <a hreflang="en" href="https://www.aleydasolis.com/en/blog/">blog</a>, su <a hreflang="en" href="https://www.aleydasolis.com/en/seo-tips/">newsletter &#35;SEOFOMO</a>, en <a hreflang="en" href="https://www.aleydasolis.com/en/crawling-mondays-videos/">Crawling Mondays</a>, una serie de videos y podcasts, y en <a href="https://twitter.com/aleyda">Twitter</a>.
-ipullrank_bio: Un artista y tecnólogo, unidos en uno, Michael King es el fundador de la agencia de marketing digital para empresas, <a hreflang="en" href="https://ipullrank.com">iPullRank</a> y fundador de la aplicación de Generación de Lenguaje Natural <a hreflang="en" href="https://www.copyscience.io">CopyScience</a>. Apoyándose sin esfuerzo en su experiencia como músico independiente de hip-hop, El Sr. King es un convincente creador de contenidos y un galardonado conferenciante dinámico al que se recurre para participar en conferencias y blogs sobre tecnología y marketing en todo el mundo. Puedes encontrar a Mike en <a href="https://twitter.com/ipullrank">Twitter</a>
-fellowhuman1101_bio: 100% humano & totalmente not una robot, Jamie Indigo desenreda las tecnologías para ayudar a los seres humanos a acceder a información útil y a empresas para ofrecer experiencias digitales valiosas. Ella fundó <a hreflang="en" href="https://not-a-robot.com">Not a Robot</a> para ofrecer consultoría con un enfoque en los aspectos humanos del SEO técnico incluyendo la ética y la inclusión en la tecnología y la industria de la búsqueda. La puedes encontrar aprendiendo en público en <a href="https://twitter.com/Jammer_Volts">Twitter</a>.
+aleyda_bio: Consultora SEO, autora, conferenciante y emprendedora. Fundadora de <a hreflang="en" href="https://www.orainti.com/">Orainti</a> (una consultoría SEO boutique que trabaja con las mejores propiedades web y marcas, desde SaaS hasta marketplaces) y co-fundadora de <a hreflang="en" href="https://remoters.net/">Remoters.net</a> (un sitio web gratuito de recursos para trabajadores remotos, listando ofertas de trabajo remoto, herramientas, eventos, guías, y más para facilitar el trabajo remoto). Aleyda disfruta compartir sobre SEO a través de su <a hreflang="en" href="https://www.aleydasolis.com/en/blog/">blog</a>, su <a hreflang="en" href="https://www.aleydasolis.com/en/seo-tips/">newsletter &#35;SEOFOMO</a>, en <a hreflang="en" href="https://www.aleydasolis.com/en/crawling-mondays-videos/">Crawling Mondays</a>, una serie de videos y podcasts, y en <a href="https://x.com/aleyda">Twitter</a>.
+ipullrank_bio: Un artista y tecnólogo, unidos en uno, Michael King es el fundador de la agencia de marketing digital para empresas, <a hreflang="en" href="https://ipullrank.com">iPullRank</a> y fundador de la aplicación de Generación de Lenguaje Natural <a hreflang="en" href="https://www.copyscience.io">CopyScience</a>. Apoyándose sin esfuerzo en su experiencia como músico independiente de hip-hop, El Sr. King es un convincente creador de contenidos y un galardonado conferenciante dinámico al que se recurre para participar en conferencias y blogs sobre tecnología y marketing en todo el mundo. Puedes encontrar a Mike en <a href="https://x.com/ipullrank">Twitter</a>
+fellowhuman1101_bio: 100% humano & totalmente not una robot, Jamie Indigo desenreda las tecnologías para ayudar a los seres humanos a acceder a información útil y a empresas para ofrecer experiencias digitales valiosas. Ella fundó <a hreflang="en" href="https://not-a-robot.com">Not a Robot</a> para ofrecer consultoría con un enfoque en los aspectos humanos del SEO técnico incluyendo la ética y la inclusión en la tecnología y la industria de la búsqueda. La puedes encontrar aprendiendo en público en <a href="https://x.com/Jammer_Volts">Twitter</a>.
 discuss: 2043
 results: https://docs.google.com/spreadsheets/d/1ram47FshAjzvbQVJbAQPgxZN7PPOPCKIK67VJZCo92c/
 featured_quote: A pesar del creciente uso de dispositivos móviles y el paso de Google a un índice Mobile first, desigualdades no triviales fueron encontradas entre las páginas para móviles y de escritorio, como la existente entre los enlaces para páginas móviles y de escritorio.
@@ -424,9 +425,9 @@ El crecimiento en el uso de estos objetos es una señal general de un aumento en
 * El uso del marcado `HowTo` creció 605% en escritorio y 623% en móvil.
 * El uso del marcado `QAPage` creció 166.7% en escritorio y 192.1% en móvil.
 
-<p class="note">
+<aside class="note">
   De nuevo, es importante aclarar que estos datos pueden no ser representativos de su nivel de crecimiento real, pues estos objetos son usualmente usados en página internas.
-</p>
+</aside>
 
 La adopción de los datos estructurados es una ventaja para la web ya que la extracción de datos es valiosa para una gran cantidad de casos de uso. Esperamos que esto siga creciendo a medida que los buscadores expanden su uso y empiecen a impulsar aplicaciones más allá de la búsqueda web.
 

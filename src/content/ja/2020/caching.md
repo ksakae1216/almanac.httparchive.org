@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: キャッシング
 description: 2020年版Web Almanacのキャッシングの章では、キャッシュコントロール、期限切れ、TTL、有効性、可変、set-cookies、AppCache、サービスワーカー、機会について説明しています。
+hero_alt: Hero image of Web Almanac characters and resources in parking slots in a car park with parking meters in from of them. The middle spot is labelled 304.
 authors: [roryhewitt, raghuramakrishnan71]
 reviewers: [jzyang]
 analysts: [raghuramakrishnan71]
@@ -71,9 +72,9 @@ featured_stat_label_3: キャッシングの改善により、再訪問時に2MB
   )
 }}
 
-<p class="note">注：本章では、特に明記しない限り、デスクトップの統計も同様であると理解した上で、すべての統計をモバイル用にしています。モバイルとデスクトップの統計が大きく異なる場合は、その旨を明記しています。
+<aside class="note">注：本章では、特に明記しない限り、デスクトップの統計も同様であると理解した上で、すべての統計をモバイル用にしています。モバイルとデスクトップの統計が大きく異なる場合は、その旨を明記しています。
 
-本章で使用するレスポンスの多くは、一般的に入手可能なサーバーパッケージを使用するウェブサーバーからのものです。ベストプラクティスを示すことはできても、使用しているソフトウェアパッケージのキャッシュオプションの数が限られている場合には、ベストプラクティスを実現できない可能性があります。</p>
+本章で使用するレスポンスの多くは、一般的に入手可能なサーバーパッケージを使用するウェブサーバーからのものです。ベストプラクティスを示すことはできても、使用しているソフトウェアパッケージのキャッシュオプションの数が限られている場合には、ベストプラクティスを実現できない可能性があります。</aside>
 
 ## キャッシングの基本原則
 

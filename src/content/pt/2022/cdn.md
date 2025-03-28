@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: CDN
 description: Capítulo sobre CDN do Web Almanac de 2022 cobrindo a adoção de CDNs, principais fornecedores de CDN, o impacto das CDNs no TLS, adoção de HTTP/2+, Brotli e Client Hints.
+hero_alt: Hero image of Web Almanac characters extending a plug from a cloud into a web page.
 authors: [harendra, joeviggiano]
 reviewers: [ytkoka]
 analysts: [harendra, joeviggiano]
@@ -273,7 +274,7 @@ Apesar da empolgação em torno do HTTP/2 e a promessa de redução de latência
 
 As CDNs atuam como um proxy para preencher a lacuna, fornecendo uma camada para consolidar nomes de host e roteando o tráfego para os pontos finais relevantes com mudanças mínimas em sua infraestrutura de hospedagem. Recursos como priorização de conteúdo na fila e push do servidor podem ser gerenciados do lado das CDNs e algumas CDNs até fornecem soluções automatizadas para executar esses recursos sem qualquer input dos proprietários dos sites, oferecendo assim um impulso para a adoção do HTTP/2.
 
-<p class="note">Observe que, devido ao funcionamento do HTTP/3 (veja o capítulo sobre [HTTP](./http) para mais informações), o HTTP/3 frequentemente não é utilizado para conexões iniciais. Por isso, estamos medindo "HTTP/2+", já que muitas dessas conexões HTTP/2 podem, na verdade, ser HTTP/3 para visitantes recorrentes (presumimos que nenhum servidor implementa HTTP/3 sem HTTP/2).</p>
+<aside class="note">Observe que, devido ao funcionamento do HTTP/3 (veja o capítulo sobre [HTTP](./http) para mais informações), o HTTP/3 frequentemente não é utilizado para conexões iniciais. Por isso, estamos medindo "HTTP/2+", já que muitas dessas conexões HTTP/2 podem, na verdade, ser HTTP/3 para visitantes recorrentes (presumimos que nenhum servidor implementa HTTP/3 sem HTTP/2).</aside>
 
 {{ figure_markup(
   image="cdn-http-versions-mobile.png",

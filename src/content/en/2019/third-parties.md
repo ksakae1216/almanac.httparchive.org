@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Third Parties
 description: Third Parties chapter of the 2019 Web Almanac covering data of what third parties are used, what they are used for, performance impacts and privacy impacts.
+hero_alt: Hero image of Web Almanac characters plugging various things into a web page.
 authors: [patrickhulce]
 reviewers: [zcorpan, foxdavidj, jasti]
 analysts: [patrickhulce]
@@ -56,9 +57,9 @@ This chapter divides third-party providers into one of these broad categories. A
 - **Video** - providers that host the arbitrary video content of their users
 - **Other** - uncategorized or non-conforming activity
 
-<p class="note">
+<aside class="note">
   <strong>Note on CDNs</strong>: The CDN category here includes providers that provide resources on <strong>public</strong> CDN domains (e.g. bootstrapcdn.com, cdnjs.cloudflare.com, etc.) and does <strong>not</strong> include resources that are simply served over a CDN. i.e. putting Cloudflare in front of a page would not influence its first-party designation according to our criteria.
-</p>
+</aside>
 
 ### Caveats
 

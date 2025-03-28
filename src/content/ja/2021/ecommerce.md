@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Eコマース
 description: 2021 Web AlmanacのEコマースの章では、Eコマースプラットフォーム、ページ重量、画像、サードパーティ、コアウェブバイタルとlighthouseパフォーマンスメトリクス、SEO、PWAをカバーしています。
+hero_alt: Hero image of a Web Almanac character at a super market checkout loading items from a shopping basket onto the conveyor belt while another character payes with a credit card.
 authors: [bobbyshaw]
 reviewers: [rockeynebhwani, alankent, soulcorrosion, fili]
 analysts: [rrajiv]
@@ -101,7 +102,7 @@ eコマースサイトの全体のシェアは、21.3％（デスクトップは
 
 10のプラットフォームのうち6つがSaaSである（またはSaaS版がある）。Shopify、<a hreflang="en" href="https://www.wix.com/ecommerce/website">Wix eCommerce</a>、<a hreflang="en" href="https://www.squarespace.com/ecommerce-website">Squarespace Commerce</a>、<a hreflang="en" href="https://www.bigcommerce.com/">BigCommerce</a>、Shopwareと<a hreflang="pt" href="https://lojaintegrada.com.br/">Loja Integrada</a>。
 
-<p class="note">注：2021年7月のHTTP Archiveデータに、<a hreflang="en" href="https://www.opencart.com/">OpenCart</a>のサイト数が過小に報告される<a hreflang="en" href="https://github.com/HTTPArchive/httparchive.org/issues/414">問題</a>が発生しました。9月の結果では、10,801のOpenCartサイトが検出されたことは認めるに値します。もし7月に同数のOpenCartサイトが検出されていたとしたら、人気の点ではBigCommerceとShopwareの間に位置することになります。</p>
+<aside class="note">注：2021年7月のHTTP Archiveデータに、<a hreflang="en" href="https://www.opencart.com/">OpenCart</a>のサイト数が過小に報告される<a hreflang="en" href="https://github.com/HTTPArchive/httparchive.org/issues/414">問題</a>が発生しました。9月の結果では、10,801のOpenCartサイトが検出されたことは認めるに値します。もし7月に同数のOpenCartサイトが検出されていたとしたら、人気の点ではBigCommerceとShopwareの間に位置することになります。</aside>
 
 ### ウェブサイトの人気順で上位のeコマース・プラットフォーム
 
@@ -530,7 +531,7 @@ HTMLのペイロードの中央値は、モバイルで38KB、デスクトップ
   sql_file="pagestats_image_bydevice_format.sql"
 ) }}
 
-<p class="note">画像サービスや CDN の中には、WebP をサポートするプラットフォームには、接尾辞が <code>.jpg</code>や<code>.png</code> の URL でも (JPEG や PNG ではなく) WebP を自動的に配信するものがあることに注意してください。たとえば、<code>IMG_20190113_113201.jpg</code>は、ChromeではWebPの画像を返します。しかし、HTTP Archive が画像フォーマットを検出する方法は、まず MIME タイプのキーワードを確認し、次にファイル拡張子にフォールバックします。つまり、上記のような URL を持つ画像のフォーマットは、HTTP Archive がユーザーエージェントとしてサポートしている WebP が与えられることになります。</p>
+<aside class="note">画像サービスや CDN の中には、WebP をサポートするプラットフォームには、接尾辞が <code>.jpg</code>や<code>.png</code> の URL でも (JPEG や PNG ではなく) WebP を自動的に配信するものがあることに注意してください。たとえば、<code>IMG_20190113_113201.jpg</code>は、ChromeではWebPの画像を返します。しかし、HTTP Archive が画像フォーマットを検出する方法は、まず MIME タイプのキーワードを確認し、次にファイル拡張子にフォールバックします。つまり、上記のような URL を持つ画像のフォーマットは、HTTP Archive がユーザーエージェントとしてサポートしている WebP が与えられることになります。</aside>
 
 もっとも普及している画像形式はJPGで、モバイルでは54%がこの形式でした。これは、画像の50%がJPGであった昨年に比べ、8%増加しています。
 

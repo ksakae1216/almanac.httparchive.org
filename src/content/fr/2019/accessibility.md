@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Accessibilité
 description: Chapitre Accessibilité du web Almanac 2019, couvrant la facilité de lecture, les medias, l’aisance de navigation et la compatibilité avec les technologies d’assistance.
+hero_alt: Hero image of a robot with a blue, human accessibility icon on its front scanning a web page, while Web Almanac characters check some labels.
 authors: [nektarios-paisios, foxdavidj, kleinab]
 reviewers: [ljme]
 analysts: [dougsillars, rviscomi, foxdavidj]
@@ -56,7 +57,7 @@ Afin de vous assurer que votre site web soit lisible dans ces conditions, un con
 
 Seuls 22,04&nbsp;% des sites ont donné à l’ensemble de leurs textes un contraste de couleurs suffisant. En d’autres termes&nbsp;: 4 sites sur 5 ont un texte qui se confond facilement avec son arrière-plan, le rendant illisible.
 
-<p class="note">Notez que nous n’avons pas été en mesure d’analyser du texte pris dans des images, de sorte que notre statistique est une limite supérieure du nombre total de sites web réussissant le test de contraste des couleurs.</p>
+<aside class="note">Notez que nous n’avons pas été en mesure d’analyser du texte pris dans des images, de sorte que notre statistique est une limite supérieure du nombre total de sites web réussissant le test de contraste des couleurs.</aside>
 
 ### Zoom et mise à l’échelle des pages
 

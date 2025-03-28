@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Mobile Web
 description: Mobile Web chapter of the 2021 Web Almanac covering page web vitals, images, technology adoption, accessibility and more.
+hero_alt: Hero image of Web Almanac characters squeezing a web page onto a mobile screen.
 authors: [fellowhuman1101, dwsmart, ashleyish]
 reviewers: [foxdavidj, fili]
 analysts: [rvth, foxdavidj]
@@ -40,7 +41,7 @@ We've used a few different data sources in this chapter:
 * HTTP Archive
 * Lighthouse
 * Wappalyzer
-* <a hreflang="en" href="https://twitter.com/paulcalvano/status/1454866401781587969">Akamai</a>
+* <a hreflang="en" href="https://x.com/paulcalvano/status/1454866401781587969">Akamai</a>
 
 It is worth noting that HTTP Archive and Lighthouse data is limited to the data identified from websites' home pages only, and not site-wide. Learn more in our [Methodology](./methodology) page.
 
@@ -119,7 +120,7 @@ Fortunately, there are a few other sources. <a href="./contributors#paulcalvano"
   )
 }}
 
-Weekend days show a greater proportion of mobile traffic, climbing somewhere around 10% from around 55 - 56% to 65 - 67%. Globally, not every country has Monday to Friday work weeks -  Sunday to Thursday is also <a hreflang="en" href="https://en.wikipedia.org/wiki/Workweek_and_weekend">another common pattern</a>, something that can be seen with a slight ramp up on Fridays, leading to a bigger jump in mobile usage on Saturdays and Sundays.
+Weekend days show a greater proportion of mobile traffic, climbing somewhere around 10% from around 55 - 56% to 65 - 67%. Globally, not every country has Monday to Friday work weeks -  Sunday to Thursday is also [another common pattern](https://wikipedia.org/wiki/Workweek_and_weekend), something that can be seen with a slight ramp up on Fridays, leading to a bigger jump in mobile usage on Saturdays and Sundays.
 
 ##### Not all times are equal
 
@@ -653,7 +654,7 @@ Inputting text and data on mobile devices is a generally more tedious process th
 
 For mobile page loads, 24.8% of pages utilized the `autocomplete` attribute, lower than the 27% of desktop page loads.
 
-As the HTTP Archive data captures only homepages, usage could be much higher in checkout, contact and other places that are likely to require inputs, but it is perhaps disappointing to see lower usage on mobile experiences, where arguably it is the most useful.
+As the HTTP Archive data captures only home pages, usage could be much higher in checkout, contact and other places that are likely to require inputs, but it is perhaps disappointing to see lower usage on mobile experiences, where arguably it is the most useful.
 
 #### Input field conclusions
 
@@ -830,7 +831,7 @@ Too often an approach to responsive web design is to supply an image whose nativ
 #### Appropriately sized images
 
 {{ figure_markup(
-    caption="Percent of mobile page loads that had appropriately sized images",
+    caption="Percent of mobile page loads that had appropriately sized images.",
     content="56.6%",
     classes="big-number",
     sheets_gid="1754517886",
@@ -884,7 +885,7 @@ Looking at the HTTP Archive's <a hreflang="en" href="https://httparchive.org/rep
   )
 }}
 
-A driving factor in this growth can be attributed to the prevalence of WordPress (source: <a hreflang="en" href="https://twitter.com/rick_viscomi/status/1344380340153016321?s=20">Rick Viscomi on Twitter</a>). WordPress added <a hreflang="en" href="https://make.wordpress.org/core/2020/07/14/lazy-loading-images-in-5-5/">support for native lazy-loading in version 5.5</a> which rolled out to the public on August 11th, 2020.
+A driving factor in this growth can be attributed to the prevalence of WordPress (source: <a hreflang="en" href="https://x.com/rick_viscomi/status/1344380340153016321?s=20">Rick Viscomi on Twitter</a>). WordPress added <a hreflang="en" href="https://make.wordpress.org/core/2020/07/14/lazy-loading-images-in-5-5/">support for native lazy-loading in version 5.5</a> which rolled out to the public on August 11th, 2020.
 
 It's also worth mentioning that incorrectly used, <a hreflang="en" href="https://web.dev/articles/lcp-lazy-loading">Lazy Loading LCP Candidates</a> can harm performance. Making sure to apply `loading="lazy"` only to images below the fold is best practice.
 

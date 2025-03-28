@@ -2,9 +2,10 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Opmaak
 description: Opmaakhoofdstuk van de Web Almanac 2020 met algemene observaties, het gebruik van elementen en attributen, maar ook trivia en trends.
+hero_alt: Hero image of Web Almanac characters as dressed as constructor workers putting together a web page from HTML element blocks.
 authors: [j9t, catalinred, iandevlin]
 j9t_bio: Jens Oliver Meiert is een webontwikkelaar en auteur (<a hreflang="en" href="https://leanpub.com/css-optimization-basics"><cite>CSS Optimization Basics</cite></a>, <a hreflang="en" href="https://leanpub.com/web-development-glossary"><cite>The Web Development Glossary</cite></a>), die werkt als ingenieur manager bij <a hreflang="en" href="https://www.jimdo.com/">Jimdo</a>. Hij is een expert op het gebied van webontwikkeling, waar hij gespecialiseerd is in HTML- en CSS-optimalisatie. Jens draagt bij aan technische standaarden en schrijft regelmatig over zijn werk en onderzoek, met name op zijn website, <a hreflang="en" href="https://meiert.com/en/">meiert.com</a>.
-catalinred_bio: Catalin Rosu is een front-end ontwikkelaar bij <a hreflang="en" href="https://www.caphyon.com/">Caphyon</a> en werkt momenteel aan <a hreflang="en" href="https://www.wattspeed.com/">Wattspeed</a>. Hij heeft een passie voor webstandaarden en een scherp oog voor geweldige Gebruikerservaring en gebruikersinterface (UX & UI), dingen die hij <a href="https://twitter.com/catalinred">tweet</a> en waarover hij schrijft op <a hreflang="en" href="https://catalin.red/">zijn website</a>.
+catalinred_bio: Catalin Rosu is een front-end ontwikkelaar bij <a hreflang="en" href="https://www.caphyon.com/">Caphyon</a> en werkt momenteel aan <a hreflang="en" href="https://www.wattspeed.com/">Wattspeed</a>. Hij heeft een passie voor webstandaarden en een scherp oog voor geweldige Gebruikerservaring en gebruikersinterface (UX & UI), dingen die hij <a href="https://x.com/catalinred">tweet</a> en waarover hij schrijft op <a hreflang="en" href="https://catalin.red/">zijn website</a>.
 iandevlin_bio: Ian Devlin is een webontwikkelaar die pleit voor goede, semantische HTML en toegankelijkheid. Hij schreef ooit een boek over <a hreflang="en" href="https://www.peachpit.com/store/html5-multimedia-develop-and-design-9780321793935">HTML5 Multimedia</a>, en schrijft sporadisch op <a hreflang="en" href="https://iandevlin.com/">zijn website</a> over het web en andere dingen. Momenteel werkt hij als Senior Frontend Engineer bij <a hreflang="de" href="https://www.real-digital.de/">real.digital</a> in Duitsland.
 reviewers: [zcorpan, matuzo, bkardell]
 analysts: [Tiggerito]
@@ -29,9 +30,9 @@ Hoe gebruiken we HTML dan, hoe groot is onze basis? In het inleidende gedeelte v
 
 De analyse van vorig jaar was gebaseerd op 5,8 miljoen pagina's, waarvan 4,4 miljoen op desktop en 5,3 miljoen op mobiel. Dit jaar hebben we 7,5 miljoen pagina's geanalyseerd, waarvan 5,6 miljoen op desktopcomputers en 6,3 miljoen op mobiele apparaten, met behulp van de [laatste gegevens](./methodology#websites) op de websites die gebruikers in 2020 bezoeken. We maken enkele vergelijkingen met vorig jaar, maar net zoals we hebben geprobeerd om aanvullende statistieken te analyseren voor nieuwe inzichten, hebben we ook geprobeerd onze eigen persoonlijkheden en perspectieven door te geven in het hoofdstuk.
 
-<p class="note">
+<aside class="note">
   In dit Opmaak-hoofdstuk concentreren we ons bijna uitsluitend op HTML, in plaats van SVG of MathML, die ook als opmaaktalen worden beschouwd. Tenzij anders vermeld, verwijzen de statistieken in dit hoofdstuk naar de set mobiele pagina's. Bovendien zijn de gegevens voor alle Web Almanac-hoofdstukken open en beschikbaar. Bekijk <a hreflang="en" href="https://docs.google.com/spreadsheets/d/1Ta7amoUeaL4pILhWzH-SCzMX9PsZeb1x_mwrX2C4eY8/">de resultaten</a> en <a hreflang="en" href="https://discuss.httparchive.org/t/2039">deel uw observaties</a> met de community!
-</p>
+</aside>
 
 ## Algemeen
 
@@ -329,7 +330,7 @@ Hier is een eenvoudig voorbeeld dat het gebruik van een `summary` in een `detail
 </details>
 ```
 
-Een tijdje geleden wees Steve Faulkner [erop](https://twitter.com/stevefaulkner/status/806474286592561152) hoe deze twee elementen in het wild onvoldoende werden gebruikt. Zoals u aan het bovenstaande voorbeeld kunt zien, heeft u voor elk `details`-element een `summary`-element nodig dat alleen mag worden gebruikt als het [eerste kind](https://developer.mozilla.org/docs/Web/HTML/Element/summary#Usage_notes) van `details`.
+Een tijdje geleden wees Steve Faulkner [erop](https://x.com/stevefaulkner/status/806474286592561152) hoe deze twee elementen in het wild onvoldoende werden gebruikt. Zoals u aan het bovenstaande voorbeeld kunt zien, heeft u voor elk `details`-element een `summary`-element nodig dat alleen mag worden gebruikt als het [eerste kind](https://developer.mozilla.org/docs/Web/HTML/Element/summary#Usage_notes) van `details`.
 
 Dienovereenkomstig hebben we gekeken naar het aantal `details` en `summary` elementen en het lijkt erop dat ze nog steeds worden misbruikt. Het aantal `summary`-elementen is hoger op zowel mobiel als desktop, met een verhouding van respectievelijk 1,11 `samenvatting`-elementen voor elk `details`-element op mobiel en 1,19 op desktop:
 
@@ -957,7 +958,7 @@ De twee meest populaire vallen op omdat ze bijna twee keer zo populair zijn dan 
 
 Attributen zoals `data-type`, `data-id` en `data-src` kunnen meerdere generieke toepassingen hebben, hoewel `data-src` veel wordt gebruikt bij het lui laden van afbeeldingen via JavaScript (bijvoorbeeld Bootstrap 4). <a hreflang="en" href="https://getbootstrap.com/">Bootstrap</a> legt opnieuw de aanwezigheid uit van `data-toggle`, waar het wordt gebruikt als een staat styling haak op schakelknoppen. De <a hreflang="en" href="https://kenwheeler.github.io/slick/">Slick carousel plugin</a> is de bron van `data-slick-index`, terwijl `data-element_type` deel uitmaakt van <a hreflang="en" href="https://elementor.com/">Elementor's WordPress-websitebouwer</a>. Zowel `data-requiremodule` als `data-requirecontext` maken dus deel uit van <a hreflang="en" href="https://requirejs.org/">RequireJS</a>.
 
-Interessant is dat het gebruik van native lazy loading op afbeeldingen vergelijkbaar is met dat van `data-src`. <a hreflang="en" href="https://docs.google.com/spreadsheets/d/1ram47FshAjzvbQVJbAQPgxZN7PPOPCKIK67VJZCo92c/edit#gid=2109061092">3.86% van de pagina's</a> gebruiken `loading="lazy"` op `<img>` -elementen. Dit lijkt erg snel te groeien, aangezien dit aantal in februari ongeveer [0,8%](https://twitter.com/zcorpan/status/1237016679667970050) bedroeg. Het is mogelijk dat deze samen worden gebruikt voor een <a hreflang="en" href="https://addyosmani.com/blog/lazy-loading/">cross-browser oplossing</a>.
+Interessant is dat het gebruik van native lazy loading op afbeeldingen vergelijkbaar is met dat van `data-src`. <a hreflang="en" href="https://docs.google.com/spreadsheets/d/1ram47FshAjzvbQVJbAQPgxZN7PPOPCKIK67VJZCo92c/edit#gid=2109061092">3.86% van de pagina's</a> gebruiken `loading="lazy"` op `<img>` -elementen. Dit lijkt erg snel te groeien, aangezien dit aantal in februari ongeveer [0,8%](https://x.com/zcorpan/status/1237016679667970050) bedroeg. Het is mogelijk dat deze samen worden gebruikt voor een <a hreflang="en" href="https://addyosmani.com/blog/lazy-loading/">cross-browser oplossing</a>.
 
 ## Diversen
 
@@ -1018,9 +1019,9 @@ We hebben de gegevens bekeken en om de resultaten beter te begrijpen, hebben we 
 
 De resultaten laten zien dat bijna de helft van de pagina's die we hebben geanalyseerd de typische viewport-`content`-waarde gebruikt. Toch mist ongeveer 10% van de mobiele pagina's volledig een juiste `content`-waarde voor het viewport-meta-element, terwijl de rest een onjuiste combinatie gebruikt van `maximum-scale`, `minimum-scale`, `user-scalable=no`, of `user-scalable=0`.
 
-<p class="note">
+<aside class="note">
   Met de mobiele Edge-browser kunnen gebruikers al een tijdje inzoomen op een webpagina naar <a hreflang="en" href="https://blogs.windows.com/windows-insider/2017/01/12/announcing-windows-10-insider-preview-build-15007-pc-mobile/">ten minste 500%</a>, ongeacht de zoominstellingen die zijn gedefinieerd door een webpagina die het viewport-meta-element gebruikt.
-</p>
+</aside>
 
 ### Favicons
 
@@ -1305,7 +1306,7 @@ Het gebruik van `target="_blank"` staat al enige tijd bekend als een <a hreflang
 
 Als vuistregel en om <a hreflang="en" href="https://www.nngroup.com/articles/new-browser-windows-and-tabs/">gebruiksredenen</a>, wordt het aangeraden `target="_blank"` niet te gebruiken in de eerste plaats.
 
-<p class="note">In de nieuwste Safari- en Firefox-versies biedt het instellen van <code>target="_blank"</code> op <code>a</code>-elementen impliciet hetzelfde <code>rel</code>-gedrag als het instellen van <code>rel="noopener"</code>. Dit is ook al <a hreflang="en" href="https://chromium-review.googlesource.com/c/chromium/src/+/1630010">geïmplementeerd in Chromium</a> en komt ook in Chrome 88 terecht.</p>
+<aside class="note">In de nieuwste Safari- en Firefox-versies biedt het instellen van <code>target="_blank"</code> op <code>a</code>-elementen impliciet hetzelfde <code>rel</code>-gedrag als het instellen van <code>rel="noopener"</code>. Dit is ook al <a hreflang="en" href="https://chromium-review.googlesource.com/c/chromium/src/+/1630010">geïmplementeerd in Chromium</a> en komt ook in Chrome 88 terecht.</aside>
 
 ## Gevolgtrekking
 
@@ -1319,7 +1320,7 @@ We hebben in het hele hoofdstuk enkele observaties aangeroerd, maar als reflecti
   sql_file="summary_pages_by_device_and_doctype.sql"
 ) }}
 
-Minder pagina's komen terecht in de eigenaardighedenmodus. In 2016 bedroeg dat aantal <a hreflang="en" href="https://discuss.httparchive.org/t/how-many-and-which-pages-are-in-quirks-mode/777">ongeveer 7,4%</a>. Eind 2019 hebben we [4.85%](https://twitter.com/zcorpan/status/1205242913908838400) waargenomen. En nu zitten we op ongeveer 3,97%. Deze trend, om [Simon Pieters](./contributors#zcorpan) te parafraseren in zijn bespreking van dit hoofdstuk, lijkt duidelijk en bemoedigend.
+Minder pagina's komen terecht in de eigenaardighedenmodus. In 2016 bedroeg dat aantal <a hreflang="en" href="https://discuss.httparchive.org/t/how-many-and-which-pages-are-in-quirks-mode/777">ongeveer 7,4%</a>. Eind 2019 hebben we [4.85%](https://x.com/zcorpan/status/1205242913908838400) waargenomen. En nu zitten we op ongeveer 3,97%. Deze trend, om [Simon Pieters](./contributors#zcorpan) te parafraseren in zijn bespreking van dit hoofdstuk, lijkt duidelijk en bemoedigend.
 
 Hoewel we geen historische gegevens hebben om het volledige ontwikkelingsbeeld te schetsen, heeft "betekenisloze" `div`, `span` en `i` opmaak vrijwel de `table` opmaak die we hebben waargenomen in de jaren 1990 en vroege jaren 2000 [vervangen](#topelementen). Hoewel men zich kan afvragen of `div`- en `span`-elementen altijd worden gebruikt zonder dat er een semantisch geschikter alternatief is, verdienen deze elementen nog steeds de voorkeur boven `table`-markup, aangezien deze tijdens de hoogtijdagen van het oude web schijnbaar voor alles behalve tabelgegevens werden gebruikt.
 
@@ -1335,6 +1336,6 @@ Dat dwingt ons om af te sluiten met een oproep: let op HTML. Focus op HTML. Het 
 
 Laten we ons voor de volgende editie van het hoofdstuk over de Web Almanac voorbereiden om nader te kijken naar het vak van het schrijven van HTML en, hopelijk, hoe we het hebben verbeterd.
 
-<p class="note">
+<aside class="note">
   We laten dit voor u open. Wat zijn uw opmerkingen? Wat viel u op? Wat is er volgens u verslechterd, en wat is er verbeterd? <a hreflang="en" href="https://discuss.httparchive.org/t/2039">Laat een reactie achter</a> om uw mening te delen!
-</p>
+</aside>

@@ -2,14 +2,15 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: SEO
 description: Capitolo SEO del Web Almanac 2020 che copre contenuto, meta tag, indicizzabilità, link, velocità, dati strutturati, internazionalizzazione, SPA, AMP e sicurezza.
+hero_alt: Hero image of various web pages beneath a search field with Web Almanac characters shine a light on the pages and make various checks.
 authors: [aleyda, ipullrank, fellowhuman1101]
 reviewers: [natedame, catalinred, dsottimano, dwsmart, en3r0, ibnesayeed, tunetheweb]
 analysts: [Tiggerito, antoineeripret]
 editors: [rviscomi]
 translators: [chefleo]
-aleyda_bio: Consulente SEO, autore, relatore e imprenditore. Fondatore di <a hreflang="en" href="https://www.orainti.com/">Orainti</a> (una società di consulenza SEO boutique che lavora con alcune delle migliori proprietà e marchi Web, dal SaaS ai marketplace) e co-fondatore di <a hreflang="en" href="https://remoters.net/">Remoters.net</a> (un hub di lavoro remoto gratuito, che include lavori remoti, strumenti, eventi, guide e altro per facilitare il lavoro remoto). Aleyda si diverte a condividere informazioni sulla SEO tramite il suo <a hreflang="en" href="https://www.aleydasolis.com/en/blog/">blog</a>, il <a hreflang="en" href="https://www.aleydasolis.com/en/seo-tips/">#SEOFOMO newsletter</a>, il video <a hreflang="en" href="https://www.aleydasolis.com/en/crawling-mondays-videos/">Crawling Mondays</a> e serie di podcast e oltre <a href="https://twitter.com/aleyda">Twitter</a>.
-ipullrank_bio: Artista e tecnologo, tutto in uno, Michael King è il fondatore dell'agenzia di marketing digitale aziendale, <a hreflang="en" href="https://ipullrank.com">iPullRank</a> e fondatore dell'app Natural Language Generation <a hreflang="en" href="https://www.copyscience.io">CopyScience</a>. Appoggiandosi senza sforzo al suo background di musicista hip-hop indipendente, Mr. King è un avvincente creatore di contenuti e un pluripremiato oratore dinamico che è chiamato a contribuire a conferenze e blog sulla tecnologia e sul marketing in tutto il mondo. Puoi trovare Mike che parla di trash su <a href="https://twitter.com/ipullrank">Twitter</a>
-fellowhuman1101_bio: 100% umano e ovviamente non un robot, Jamie Indigo districa le tecnologie per aiutare gli esseri umani ad accedere a informazioni utili e le aziende forniscono preziose esperienze digitali. Ha fondato <a hreflang="en" href="https://not-a-robot.com">Not a Robot</a> per consultarsi con precisione sugli aspetti umani della SEO tecnica, tra cui l'etica e l'inclusione nella tecnologia e nel settore della ricerca. Può scoprire che sta imparando in pubblico su <a href="https://twitter.com/Jammer_Volts">Twitter</a>.
+aleyda_bio: Consulente SEO, autore, relatore e imprenditore. Fondatore di <a hreflang="en" href="https://www.orainti.com/">Orainti</a> (una società di consulenza SEO boutique che lavora con alcune delle migliori proprietà e marchi Web, dal SaaS ai marketplace) e co-fondatore di <a hreflang="en" href="https://remoters.net/">Remoters.net</a> (un hub di lavoro remoto gratuito, che include lavori remoti, strumenti, eventi, guide e altro per facilitare il lavoro remoto). Aleyda si diverte a condividere informazioni sulla SEO tramite il suo <a hreflang="en" href="https://www.aleydasolis.com/en/blog/">blog</a>, il <a hreflang="en" href="https://www.aleydasolis.com/en/seo-tips/">#SEOFOMO newsletter</a>, il video <a hreflang="en" href="https://www.aleydasolis.com/en/crawling-mondays-videos/">Crawling Mondays</a> e serie di podcast e oltre <a href="https://x.com/aleyda">Twitter</a>.
+ipullrank_bio: Artista e tecnologo, tutto in uno, Michael King è il fondatore dell'agenzia di marketing digitale aziendale, <a hreflang="en" href="https://ipullrank.com">iPullRank</a> e fondatore dell'app Natural Language Generation <a hreflang="en" href="https://www.copyscience.io">CopyScience</a>. Appoggiandosi senza sforzo al suo background di musicista hip-hop indipendente, Mr. King è un avvincente creatore di contenuti e un pluripremiato oratore dinamico che è chiamato a contribuire a conferenze e blog sulla tecnologia e sul marketing in tutto il mondo. Puoi trovare Mike che parla di trash su <a href="https://x.com/ipullrank">Twitter</a>
+fellowhuman1101_bio: 100% umano e ovviamente non un robot, Jamie Indigo districa le tecnologie per aiutare gli esseri umani ad accedere a informazioni utili e le aziende forniscono preziose esperienze digitali. Ha fondato <a hreflang="en" href="https://not-a-robot.com">Not a Robot</a> per consultarsi con precisione sugli aspetti umani della SEO tecnica, tra cui l'etica e l'inclusione nella tecnologia e nel settore della ricerca. Può scoprire che sta imparando in pubblico su <a href="https://x.com/Jammer_Volts">Twitter</a>.
 discuss: 2043
 results: https://docs.google.com/spreadsheets/d/1ram47FshAjzvbQVJbAQPgxZN7PPOPCKIK67VJZCo92c/
 featured_quote: Nonostante il crescente utilizzo di dispositivi mobile e il passaggio di Google a un indice Mobile first, sono state riscontrate disparità non banali tra le pagine mobile e desktop, come quella tra i link mobile e desktop.
@@ -424,9 +425,9 @@ La crescita di questi oggetti è un'indicazione generale di una maggiore adozion
 * Il markup `HowTo` è cresciuto del 605% su desktop e del 623% su dispositivi mobile.
 * Il markup `QAPage` è cresciuto del 166.7% su desktop e del 192.1% su dispositivi mobili.
 
-<p class="note">
+<aside class="note">
   Ancora una volta, è importante notare che questi dati potrebbero non essere rappresentativi del loro effettivo livello di crescita, poiché questi oggetti sono solitamente posizionati su pagine interne.
-</p>
+</aside>
 
 L'adozione di dati strutturati è un vantaggio per il Web in quanto l'estrazione dei dati è preziosa per una vasta gamma di casi d'uso. Ci aspettiamo che questo continui a crescere man mano che i motori di ricerca espandono il loro utilizzo e quando inizia a potenziare le applicazioni oltre la ricerca sul web.
 

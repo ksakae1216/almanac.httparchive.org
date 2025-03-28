@@ -2,6 +2,7 @@
 #See https://github.com/HTTPArchive/almanac.httparchive.org/wiki/Authors'-Guide#metadata-to-add-at-the-top-of-your-chapters
 title: Balisage Web
 description: Chapitre sur le balisage web du rapport Web Almanac 2019. Découvrez des statistiques sur  l’usage des balises, leurs valeurs, les solutions et des cas d’utilisation courants.
+hero_alt: Hero image of Web Almanac characters as dressed as constructor workers putting together a web page from HTML element blocks.
 authors: [bkardell]
 reviewers: [zcorpan, tomhodgins, matthewp]
 analysts: [rviscomi]
@@ -37,7 +38,7 @@ Examiner un nombre de fréquences brut n’est pas particulièrement utile, mêm
 
 Au lieu de faire ça, nous allons examiner combien de sites incluent chaque élément au moins une fois dans leur page d’accueil, comme dans l’étude originale de Hixie.
 
-<p class="note">Remarque : cette démarche n’est pas dénuée, en soi, de biais potentiels. Des solutions populaires, pouvant être utilisées par plusieurs sites, peuvent introduire un balisage non standard "invisible" à chaque auteur. Ainsi, il faut veiller à reconnaître que l’utilisation n’implique pas nécessairement la connaissance directe de l’auteur et l’adoption consciente puisqu’elle répond à un besoin commun, d’une manière commune. Au cours de notre recherche, nous avons trouvé plusieurs exemples, dont certains seront explicités.</p>
+<aside class="note">Remarque : cette démarche n’est pas dénuée, en soi, de biais potentiels. Des solutions populaires, pouvant être utilisées par plusieurs sites, peuvent introduire un balisage non standard "invisible" à chaque auteur. Ainsi, il faut veiller à reconnaître que l’utilisation n’implique pas nécessairement la connaissance directe de l’auteur et l’adoption consciente puisqu’elle répond à un besoin commun, d’une manière commune. Au cours de notre recherche, nous avons trouvé plusieurs exemples, dont certains seront explicités.</aside>
 
 ## Principaux éléments de balisage et généralités
 
@@ -162,7 +163,7 @@ Dans le jeu de données pour ordinateurs de bureau, nous avons collecté des don
 
 En outre, 15 % des pages pour ordinateurs de bureau et 16 % des pages mobiles contiennent des éléments obsolètes.
 
-<p class="note">Remarque : Il est très probable que cela soit dû en grande partie à l’utilisation de solutions plutôt qu’à des auteurs isolés qui continueraient à créer manuellement ce balisage.</p>
+<aside class="note">Remarque : Il est très probable que cela soit dû en grande partie à l’utilisation de solutions plutôt qu’à des auteurs isolés qui continueraient à créer manuellement ce balisage.</aside>
 
 {{ figure_markup(
   image="fig6.png",
@@ -258,7 +259,7 @@ En gardant à l’esprit cette perspective sur l’utilisation des fonctionnalit
 
 Vous pourriez vous attendre à ce que beaucoup des éléments que nous avons analysés ne soient utilisés que sur une seule page web. En fait, les 5 048 éléments apparaissent tous sur plus d’une page. Le nombre de pages sur lesquelles un élément de notre ensemble de données apparaît est de 15 au minimum. Environ un cinquième d’entre eux apparaissent sur plus de 100 pages. Environ 7 % d’entre eux apparaissent sur plus de 1 000 pages.
 
-Pour aider à analyser les données, j’ai bidouillé un <a hreflang="en" href="https://rainy-periwinkle.glitch.me">petit outil avec Glitch</a>. Vous pouvez utiliser cet outil vous-même et envoyer un lien permanent à [@HTTPArchive](https://twitter.com/HTTPArchive) avec vos observations. (Tommy Hodgins a également construit un <a hreflang="en" href="https://github.com/tomhodgins/hade">outil CLI similaire</a> que vous pouvez utiliser pour explorer les données).
+Pour aider à analyser les données, j’ai bidouillé un <a hreflang="en" href="https://rainy-periwinkle.glitch.me">petit outil avec Glitch</a>. Vous pouvez utiliser cet outil vous-même et envoyer un lien permanent à [@HTTPArchive](https://x.com/HTTPArchive) avec vos observations. (Tommy Hodgins a également construit un <a hreflang="en" href="https://github.com/tomhodgins/hade">outil CLI similaire</a> que vous pouvez utiliser pour explorer les données).
 
 Jetons un coup d’oeil à quelques données.
 
